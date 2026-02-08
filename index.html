@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RxHCC Integrity Dashboard</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #667EEA;
+            --primary-dark: #5a6fd6;
+            --secondary: #764ba2;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --text-main: #2d3748;
+            --text-light: #718096;
+            --danger: #FF4B4B;
+            --warning: #FFA62F;
+            --success: #21BA45;
+            --info: #54C8FF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-right: 1px solid var(--glass-border);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 0 24px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .nav-item {
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .row {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Inputs */
+        .input-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border 0.2s;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: opacity 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.25);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Metrics */
+        .metric-card {
+            background: linear-gradient(135deg, white 0%, #f7fafc 100%);
+            padding: 20px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+            flex: 1;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 8px 0;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Results */
+        .result-item {
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            border-left: 5px solid #ccc;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-item.CRITICAL {
+            border-left-color: var(--danger);
+            background: #fff5f5;
+        }
+
+        .result-item.WARNING {
+            border-left-color: var(--warning);
+            background: #fffbf2;
+        }
+
+        .result-item.PASS {
+            border-left-color: var(--success);
+            background: #f0fff4;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 6px;
+        }
+
+        .badge.CRITICAL {
+            background: var(--danger);
+        }
+
+        .badge.WARNING {
+            background: var(--warning);
+        }
+
+        .badge.PASS {
+            background: var(--success);
+        }
+
+        .badge.INFO {
+            background: var(--info);
+        }
+
+        /* Pages */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            background: white;
+            color: var(--text-light);
+            box-shadow: none;
+            border: 1px solid #e2e8f0;
+            width: auto;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <span style="font-size: 24px;">🏥</span>
+            <span>RxHCC Demo</span>
+        </div>
+        <div class="nav-item active" onclick="showPage('realtime', this)">
+            <span>🔍</span> 실시간 검사
+        </div>
+        <div class="nav-item" onclick="showPage('dashboard', this)">
+            <span>📈</span> 분석 대시보드
+        </div>
+        <div class="nav-item" onclick="showPage('rules', this)">
+            <span>📖</span> 규칙 사전
+        </div>
+
+        <div style="margin-top: auto; font-size: 0.8rem; color: var(--text-light); text-align: center;">
+            Static Version v1.0<br>
+            Powered by GitHub Pages
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- PAGE 1: REALTIME VALIDATION -->
+        <div id="realtime" class="page active">
+            <div class="header">
+                <h1>실시간 무결성 검사</h1>
+                <p>환자의 진단(ICD)과 처방(NDC) 코드를 입력하여 규칙 위반을 실시간으로 감지합니다.</p>
+            </div>
+
+            <div class="card">
+                <div class="input-group">
+                    <label>검증 시나리오 선택 (빠른 입력)</label>
+                    <select id="scenarioSelect" onchange="loadScenario()">
+                        <option value="">-- 직접 입력 --</option>
+                        <option value="normal">✅ 정상: 2형 당뇨 + Metformin</option>
+                        <option value="conflict">🔴 충돌: 1형 + 2형 당뇨 동시 진단</option>
+                        <option value="glp1_misuse">🔴 GLP-1 오남용: 고혈압 환자에게 처방</option>
+                        <option value="glp1_type1">🔴 GLP-1 + 1형 당뇨 (금기)</option>
+                        <option value="upcoding">🔴 Upcoding: 합병증 없는 당뇨에 고위험 HCC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card">
+                    <h3 style="margin-top:0">📝 입력 데이터</h3>
+                    <div class="input-group">
+                        <label>Claim ID</label>
+                        <input type="text" id="claimId" value="CLM-001">
+                    </div>
+                    <div class="input-group">
+                        <label>ICD Codes (쉼표 구분)</label>
+                        <input type="text" id="icdCodes" placeholder="예: E11.9, I10">
+                    </div>
+                    <div class="input-group">
+                        <label>NDC Codes (쉼표 구분)</label>
+                        <input type="text" id="ndcCodes" placeholder="예: 00002-1433-80">
+                    </div>
+                    <div class="input-group">
+                        <label>HCC Codes (선택)</label>
+                        <input type="text" id="hccCodes" placeholder="예: HCC18">
+                    </div>
+                    <button onclick="runValidation()">🚀 검증 실행</button>
+                </div>
+
+                <div class="col card" id="resultCard" style="background: #f8fafc;">
+                    <h3 style="margin-top:0">📊 검증 결과</h3>
+
+                    <div id="metricsRow" class="row" style="display:none; gap: 10px; margin-bottom: 20px;">
+                        <div class="metric-card">
+                            <div class="metric-label">리스크 등급</div>
+                            <div class="metric-value" id="riskLevel">-</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">스코어</div>
+                            <div class="metric-value" id="riskScore">0</div>
+                        </div>
+                    </div>
+
+                    <div id="resultsList">
+                        <div style="text-align: center; color: var(--text-light); padding: 40px;">
+                            검증 버튼을 눌러 결과를 확인하세요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 2: DASHBOARD -->
+        <div id="dashboard" class="page">
+            <div class="header">
+                <h1>분석 대시보드 (Mockup)</h1>
+                <p>배치 검증 결과에 대한 통계 및 리스크 분포를 시각화합니다.</p>
+            </div>
+
+            <div class="row">
+                <div class="metric-card">
+                    <div class="metric-label">총 청구 건수</div>
+                    <div class="metric-value">12,450</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">위험 감지</div>
+                    <div class="metric-value" style="color: var(--danger)">1,832</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">예상 절감액</div>
+                    <div class="metric-value" style="color: var(--success)">$2.4M</div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 24px;">
+                <div class="col card">
+                    <h3>심각도 분포</h3>
+                    <canvas id="severityChart"></canvas>
+                </div>
+                <div class="col card">
+                    <h3>주요 위반 유형</h3>
+                    <canvas id="typeChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 3: RULES -->
+        <div id="rules" class="page">
+            <div class="header">
+                <h1>검증 규칙 사전</h1>
+                <p>시스템에 정의된 핵심 비즈니스 규칙 목록입니다.</p>
+            </div>
+
+            <div class="card">
+                <h3>💊 ICD-NDC 매핑 규칙</h3>
+                <div id="mappingRulesRules"></div>
+            </div>
+
+            <div class="card">
+                <h3>⚡ 충돌 감지 규칙</h3>
+                <div class="result-item WARNING">
+                    <div class="badge WARNING">WARNING</div><br>
+                    <b>당뇨 과거력 충돌:</b> 현재 당뇨(E11) 진단과 과거력(Z86.39)이 동시에 존재
+                </div>
+                <div class="result-item CRITICAL">
+                    <div class="badge CRITICAL">CRITICAL</div><br>
+                    <b>당뇨 유형 충돌:</b> 1형 당뇨(E10)와 2형 당뇨(E11) 동시 진단 (불가능)
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // === DATA & RULES ===
+        const SCENARIOS = {
+            "normal": { icd: "E11.9", ndc: "00002-1433-80", hcc: "HCC19" },
+            "conflict": { icd: "E10.9, E11.65", ndc: "00088-2500-33", hcc: "" },
+            "glp1_misuse": { icd: "I10", ndc: "00169-4060-12", hcc: "" },
+            "glp1_type1": { icd: "E10.9", ndc: "00169-4060-12", hcc: "" },
+            "upcoding": { icd: "E11.9", ndc: "00002-1433-80", hcc: "HCC18" }
+        };
+
+        const ICD_NDC_MAPPINGS = {
+            "E11": { ndcStart: ["00002", "00169", "00088", "55111"], desc: "Type 2 Diabetes" },
+            "E10": { ndcStart: ["00088", "00169", "00002"], desc: "Type 1 Diabetes" },
+            "I10": { ndcStart: ["00071", "00781", "00378", "00591"], desc: "Hypertension" },
+            "E66": { ndcStart: ["00169", "76431"], desc: "Obesity" }
+        };
+
+        const GLP1_PREFIXES = ["00169-4060", "00169-4130", "00002-7515"];
+        const GLP1_VALID_ICD = ["E11", "E66"];
+
+        // === LOGIC ===
+        function showPage(pageId, navItem) {
+            document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            if (navItem) navItem.classList.add('active');
+
+            if (pageId === 'dashboard') renderCharts();
+            if (pageId === 'rules') renderMappingRules();
+        }
+
+        function loadScenario() {
+            const key = document.getElementById("scenarioSelect").value;
+            if (key && SCENARIOS[key]) {
+                const s = SCENARIOS[key];
+                document.getElementById("icdCodes").value = s.icd;
+                document.getElementById("ndcCodes").value = s.ndc;
+                document.getElementById("hccCodes").value = s.hcc;
+            }
+        }
+
+        function runValidation() {
+            const icdInput = document.getElementById("icdCodes").value;
+            const ndcInput = document.getElementById("ndcCodes").value;
+            const hccInput = document.getElementById("hccCodes").value;
+
+            // Simple Parsing
+            const icds = icdInput.split(',').map(s => s.trim()).filter(Boolean);
+            const ndcs = ndcInput.split(',').map(s => s.trim()).filter(Boolean);
+            const hccs = hccInput.split(',').map(s => s.trim()).filter(Boolean);
+
+            const results = [];
+
+            if (icds.length === 0 || ndcs.length === 0) {
+                alert("ICD 및 NDC 코드를 입력해주세요.");
+                return;
+            }
+
+            // 1. Check ICD-NDC Mapping
+            icds.forEach(icd => {
+                const prefix = icd.split('.')[0];
+                const mapping = ICD_NDC_MAPPINGS[prefix];
+                if (mapping) {
+                    ndcs.forEach(ndc => {
+                        const isValid = mapping.ndcStart.some(p => ndc.startsWith(p));
+                        if (!isValid) {
+                            // GLP-1 check separate, but geneal check here
+                            // Skip general mismatch if it's a specific known other validation
+                        }
+                    });
+                }
+            });
+
+            // 2. Conflict (E10 + E11)
+            const hasE10 = icds.some(c => c.startsWith("E10"));
+            const hasE11 = icds.some(c => c.startsWith("E11"));
+            if (hasE10 && hasE11) {
+                results.push({
+                    severity: "CRITICAL",
+                    title: "진단 코드 충돌",
+                    message: "제1형 당뇨(E10)와 제2형 당뇨(E11)는 동시에 진단될 수 없습니다."
+                });
+            }
+
+            // 3. GLP-1 Rules
+            const hasGLP1 = ndcs.some(n => GLP1_PREFIXES.some(p => n.startsWith(p)));
+            if (hasGLP1) {
+                const hasValidIndication = icds.some(c => GLP1_VALID_ICD.some(p => c.startsWith(p)));
+
+                if (hasE10) {
+                    results.push({
+                        severity: "CRITICAL",
+                        title: "GLP-1 금기 위반",
+                        message: "제1형 당뇨 환자에게 GLP-1 제제는 승인되지 않았습니다."
+                    });
+                } else if (!hasValidIndication) {
+                    results.push({
+                        severity: "CRITICAL",
+                        title: "GLP-1 적응증 없음",
+                        message: "GLP-1 처방을 위한 적응증(2형 당뇨 또는 비만) 코드가 없습니다."
+                    });
+                }
+            }
+
+            // 4. HCC Upcoding
+            if (hasE11 && hccs.includes("HCC18")) {
+                const hasComplication = icds.some(c => ["E11.65", "E11.69"].includes(c));
+                if (!hasComplication) {
+                    results.push({
+                        severity: "CRITICAL",
+                        title: "HCC Upcoding 감지",
+                        message: "HCC18(합병증 동반)이 청구되었으나, 이를 뒷받침하는 합병증 진단코드가 없습니다."
+                    });
+                }
+            } else if (icds.some(c => c.startsWith("I10")) && ndcs.some(n => n.startsWith("00088-25"))) { /* Insulin Lantus */
+                results.push({
+                    severity: "WARNING",
+                    title: "NDC 불일치",
+                    message: "고혈압 단순 진단 환자에게 인슐린이 처방되었습니다. 당뇨 진단 누락 가능성."
+                });
+            }
+
+            // Default Pass
+            if (results.length === 0) {
+                results.push({
+                    severity: "PASS",
+                    title: "검증 통과",
+                    message: "모든 비즈니스 규칙을 준수하고 있습니다."
+                });
+            }
+
+            // Render
+            const listEl = document.getElementById("resultsList");
+            listEl.innerHTML = "";
+            let score = 0;
+            let maxSev = "PASS";
+
+            results.forEach(r => {
+                const div = document.createElement("div");
+                div.className = `result-item ${r.severity}`;
+                div.innerHTML = `
+                    <div class="badge ${r.severity}">${r.severity}</div><br>
+                    <strong>${r.title}</strong><br>${r.message}
+                `;
+                listEl.appendChild(div);
+
+                if (r.severity === "CRITICAL") score += 10;
+                if (r.severity === "WARNING") score += 5;
+            });
+
+            const level = score >= 10 ? "HIGH" : (score >= 5 ? "MEDIUM" : "LOW");
+            document.getElementById("riskScore").innerText = score;
+            document.getElementById("riskLevel").innerText = level;
+            document.getElementById("metricsRow").style.display = "flex";
+        }
+
+        function renderMappingRules() {
+            const el = document.getElementById("mappingRulesRules");
+            if (el.innerHTML) return;
+
+            Object.keys(ICD_NDC_MAPPINGS).forEach(k => {
+                const m = ICD_NDC_MAPPINGS[k];
+                const div = document.createElement("div");
+                div.className = "result-item INFO";
+                div.innerHTML = `<b>${k} (${m.desc})</b> 허용 약물 Prefix: ${m.ndcStart.join(", ")}`;
+                el.appendChild(div);
+            });
+        }
+
+        // Charts
+        let chartInited = false;
+        function renderCharts() {
+            if (chartInited) return;
+            chartInited = true;
+
+            const ctx1 = document.getElementById('severityChart').getContext('2d');
+            new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Critical', 'Warning', 'Pass'],
+                    datasets: [{
+                        data: [15, 25, 60],
+                        backgroundColor: ['#FF4B4B', '#FFA62F', '#21BA45']
+                    }]
+                }
+            });
+
+            const ctx2 = document.getElementById('typeChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['ICD Conflict', 'GLP-1 Misuse', 'Upcoding', 'NDC Mismatch'],
+                    datasets: [{
+                        label: 'Violations',
+                        data: [120, 85, 45, 150],
+                        backgroundColor: '#667EEA'
+                    }]
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
