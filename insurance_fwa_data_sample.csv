@@ -1,0 +1,501 @@
+claim_id,member_id,provider_id,specialty,state,city,diagnosis_code,diagnosis_name,cpt_code,service_name,claim_amount,service_date,service_rendered,ndc_code,drug_name,fwa_risk_score,is_fwa,fwa_type,fwa_explanation,year_month,day_of_week,risk_category
+CLM_000000,MEM_00113,PROV_0001,Pain Management,TX,Houston,E10.9,Type 1 Diabetes,20610,Joint Injection,129.93,2025-02-04 13:04:00,1,00378-6074-77,Lisinopril 10mg,0.196,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000001,MEM_00343,PROV_0032,Physical Therapy,FL,Orlando,M54.5,Low Back Pain,97112,Neuromuscular Re-education,85.02,2025-10-20 11:50:00,1,,N/A,0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-10,Monday,High
+CLM_000002,MEM_00050,PROV_0043,Endocrinology,NY,Rochester,F41.9,Anxiety Disorder,82947,Glucose Test,15.32,2025-08-28 08:43:00,1,,N/A,0.062,0,CLEAN,,2025-08,Thursday,Low
+CLM_000003,MEM_00051,PROV_0004,Orthopedics,CA,Los Angeles,F41.9,Anxiety Disorder,20610,Joint Injection,115.32,2025-02-25 11:34:00,1,,N/A,0.223,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000004,MEM_00094,PROV_0018,Emergency Medicine,IL,Unknown,E78.5,Hyperlipidemia,99285,ER Visit Level 5,481.58,2025-08-15 17:06:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-08,Friday,High
+CLM_000005,MEM_00277,PROV_0001,Pain Management,TX,Houston,E10.9,Type 1 Diabetes,99285,ER Visit Level 5,465.35,2025-09-06 14:57:00,1,,N/A,0.244,0,CLEAN,,2025-09,Saturday,Low
+CLM_000006,MEM_00002,PROV_0025,Emergency Medicine,NY,Rochester,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,35.61,2025-12-23 23:50:00,1,,N/A,0.086,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000007,MEM_00250,PROV_0010,Endocrinology,IL,Unknown,M54.5,Low Back Pain,81001,Urinalysis,25.85,2025-01-30 16:03:00,1,,N/A,0.087,0,CLEAN,,2025-01,Thursday,Low
+CLM_000008,MEM_00026,PROV_0038,Endocrinology,PA,Philadelphia,E78.5,Hyperlipidemia,97112,Neuromuscular Re-education,54.84,2025-01-30 09:54:00,1,00310-0800-39,Metformin 500mg,0.136,0,CLEAN,,2025-01,Thursday,Low
+CLM_000009,MEM_00035,PROV_0044,Cardiology,GA,Unknown,M54.5,Low Back Pain,83036,A1C Test,-8.27,2025-10-19 17:02:00,1,,N/A,0.108,0,CLEAN,,2025-10,Sunday,Low
+CLM_000010,MEM_00337,PROV_0038,Endocrinology,PA,Philadelphia,Z00.00,General Health Exam,97112,Neuromuscular Re-education,29.74,2025-05-14 13:15:00,1,,N/A,0.108,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000011,MEM_00344,PROV_0042,Orthopedics,IL,Unknown,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,51.28,2025-02-07 20:36:00,1,,N/A,0.123,0,CLEAN,,2025-02,Friday,Low
+CLM_000012,MEM_00110,PROV_0033,Physical Therapy,TX,Dallas,J06.9,Upper Respiratory Infection,99215,Office Visit Level 5,209.31,2025-05-06 10:28:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-05,Tuesday,High
+CLM_000013,MEM_00314,PROV_0042,Orthopedics,IL,Unknown,M79.3,Fibromyalgia,99213,Office Visit Level 3,70.48,2025-12-06 10:16:00,1,00093-0058-01,Atorvastatin 20mg,0.153,0,CLEAN,,2025-12,Saturday,Low
+CLM_000014,MEM_00381,PROV_0036,Pain Management,IL,Unknown,I10,Essential Hypertension,81001,Urinalysis,4.11,2025-04-18 11:43:00,1,,N/A,0.172,0,CLEAN,,2025-04,Friday,Low
+CLM_000015,MEM_00259,PROV_0032,Physical Therapy,FL,Orlando,J06.9,Upper Respiratory Infection,99213,Office Visit Level 3,138.99,2025-08-05 08:00:00,1,,N/A,0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-08,Tuesday,High
+CLM_000016,MEM_00135,PROV_0011,Emergency Medicine,TX,Dallas,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,32.99,2025-10-15 00:07:00,1,59762-5005-01,Xanax 0.5mg,0.187,0,CLEAN,,2025-10,Wednesday,Low
+CLM_000017,MEM_00354,PROV_0010,Endocrinology,IL,Unknown,M79.3,Fibromyalgia,99213,Office Visit Level 3,69.17,2025-08-09 12:23:00,1,00310-0800-39,Metformin 500mg,0.138,0,CLEAN,,2025-08,Saturday,Low
+CLM_000018,MEM_00021,PROV_0023,Primary Care,CA,Los Angeles,M54.5,Low Back Pain,72148,MRI Lumbar Spine,839.62,2025-02-22 16:56:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-02,Saturday,High
+CLM_000019,MEM_00474,PROV_0016,Orthopedics,PA,Philadelphia,I10,Essential Hypertension,99215,Office Visit Level 5,158.85,2025-04-02 13:50:00,1,00002-8215-01,Humalog (Insulin),0.232,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000020,MEM_00443,PROV_0048,Psychiatry,IL,Unknown,M54.5,Low Back Pain,81001,Urinalysis,31.45,2025-12-26 08:54:00,1,,N/A,0.112,0,CLEAN,,2025-12,Friday,Low
+CLM_000021,MEM_00419,PROV_0030,Psychiatry,FL,Orlando,E66.01,Morbid Obesity,81001,Urinalysis,-9.42,2025-04-25 07:21:00,1,00378-6074-77,Lisinopril 10mg,0.154,0,CLEAN,,2025-04,Friday,Low
+CLM_000022,MEM_00496,PROV_0050,Orthopedics,CA,San Diego,J06.9,Upper Respiratory Infection,82947,Glucose Test,-6.56,2025-12-14 16:21:00,1,59762-5005-01,Xanax 0.5mg,0.244,0,CLEAN,,2025-12,Sunday,Low
+CLM_000023,MEM_00497,PROV_0017,Pain Management,TX,Dallas,I10,Essential Hypertension,70450,CT Head without Contrast,353.94,2025-01-20 14:22:00,1,00093-0058-01,Atorvastatin 20mg,0.205,0,CLEAN,,2025-01,Monday,Low
+CLM_000024,MEM_00060,PROV_0025,Emergency Medicine,NY,Rochester,Z00.00,General Health Exam,99285,ER Visit Level 5,464.77,2025-12-29 13:00:00,1,,N/A,0.068,0,CLEAN,,2025-12,Monday,Low
+CLM_000025,MEM_00276,PROV_0044,Cardiology,GA,Unknown,M25.511,Knee Pain,20610,Joint Injection,123.43,2025-07-06 18:58:00,1,00378-6074-77,Lisinopril 10mg,0.089,0,CLEAN,,2025-07,Sunday,Low
+CLM_000026,MEM_00340,PROV_0008,Physical Therapy,FL,Orlando,M25.511,Knee Pain,81001,Urinalysis,12.69,2025-06-17 12:35:00,1,59762-5005-01,Xanax 0.5mg,0.128,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000027,MEM_00341,PROV_0025,Emergency Medicine,NY,Rochester,G89.29,Chronic Pain,20610,Joint Injection,113.98,2025-07-27 17:53:00,1,00093-0058-01,Atorvastatin 20mg,0.104,0,CLEAN,,2025-07,Sunday,Low
+CLM_000028,MEM_00108,PROV_0028,Physical Therapy,NC,Unknown,Z00.00,General Health Exam,70450,CT Head without Contrast,340.79,2025-08-15 11:32:00,1,68382-0087-06,Hydrocodone,0.72,1,UNNECESSARY_SERVICE,High-cost imaging for routine health exam,2025-08,Friday,High
+CLM_000029,MEM_00492,PROV_0048,Psychiatry,IL,Unknown,I10,Essential Hypertension,72148,MRI Lumbar Spine,869.6,2025-09-21 17:21:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-09,Sunday,High
+CLM_000030,MEM_00345,PROV_0020,Cardiology,TX,Austin,M54.5,Low Back Pain,99285,ER Visit Level 5,456.48,2025-01-24 15:39:00,1,,N/A,0.065,0,CLEAN,,2025-01,Friday,Low
+CLM_000031,MEM_00213,PROV_0041,Primary Care,IL,Unknown,Z00.00,General Health Exam,99285,ER Visit Level 5,442.3,2025-09-11 10:41:00,1,59762-5005-01,Xanax 0.5mg,0.247,0,CLEAN,,2025-09,Thursday,Low
+CLM_000032,MEM_00385,PROV_0050,Orthopedics,CA,San Diego,E10.9,Type 1 Diabetes,83036,A1C Test,16.46,2025-12-23 08:35:00,1,,N/A,0.051,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000033,MEM_00063,PROV_0030,Psychiatry,FL,Orlando,I10,Essential Hypertension,97110,Therapeutic Exercise 15min,57.23,2025-08-15 16:27:00,1,00555-0915-02,Gabapentin 300mg,0.213,0,CLEAN,,2025-08,Friday,Low
+CLM_000034,MEM_00082,PROV_0048,Psychiatry,IL,Unknown,E78.5,Hyperlipidemia,97110,Therapeutic Exercise 15min,65.62,2025-05-07 12:49:00,1,,N/A,0.204,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000035,MEM_00321,PROV_0016,Orthopedics,PA,Philadelphia,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,63.63,2025-05-27 13:20:00,1,,N/A,0.065,0,CLEAN,,2025-05,Tuesday,Low
+CLM_000036,MEM_00078,PROV_0015,Orthopedics,TX,Houston,F41.9,Anxiety Disorder,20610,Joint Injection,103.22,2025-04-20 19:34:00,1,,N/A,0.223,0,CLEAN,,2025-04,Sunday,Low
+CLM_000037,MEM_00106,PROV_0027,Orthopedics,PA,Philadelphia,F41.9,Anxiety Disorder,70450,CT Head without Contrast,343.82,2025-10-22 08:22:00,0,00002-8215-01,Humalog (Insulin),0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-10,Wednesday,Critical
+CLM_000038,MEM_00215,PROV_0035,Pain Management,TX,Austin,M25.511,Knee Pain,20610,Joint Injection,110.42,2025-09-07 14:31:00,1,00378-6074-77,Lisinopril 10mg,0.112,0,CLEAN,,2025-09,Sunday,Low
+CLM_000039,MEM_00343,PROV_0044,Cardiology,GA,Unknown,F41.9,Anxiety Disorder,20610,Joint Injection,116.29,2025-08-28 17:34:00,1,,N/A,0.115,0,CLEAN,,2025-08,Thursday,Low
+CLM_000040,MEM_00304,PROV_0037,Primary Care,FL,Tampa,G89.29,Chronic Pain,99213,Office Visit Level 3,91.25,2025-08-08 15:11:00,1,,N/A,0.227,0,CLEAN,,2025-08,Friday,Low
+CLM_000041,MEM_00173,PROV_0049,Endocrinology,NY,New York City,F41.9,Anxiety Disorder,81001,Urinalysis,42.12,2025-05-10 15:01:00,1,59762-5005-01,Xanax 0.5mg,0.144,0,CLEAN,,2025-05,Saturday,Low
+CLM_000042,MEM_00488,PROV_0023,Primary Care,CA,Los Angeles,M54.5,Low Back Pain,72148,MRI Lumbar Spine,850.13,2025-11-30 07:15:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-11,Sunday,High
+CLM_000043,MEM_00123,PROV_0009,Orthopedics,PA,Philadelphia,E78.5,Hyperlipidemia,72148,MRI Lumbar Spine,587.1,2025-04-22 12:49:00,1,,N/A,0.162,0,CLEAN,,2025-04,Tuesday,Low
+CLM_000044,MEM_00383,PROV_0046,Orthopedics,MI,Unknown,E10.9,Type 1 Diabetes,99215,Office Visit Level 5,179.28,2025-10-24 19:43:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-10,Friday,High
+CLM_000045,MEM_00367,PROV_0013,Endocrinology,TX,Dallas,E10.9,Type 1 Diabetes,70450,CT Head without Contrast,381.29,2025-02-22 12:54:00,1,00378-6074-77,Lisinopril 10mg,0.136,0,CLEAN,,2025-02,Saturday,Low
+CLM_000046,MEM_00062,PROV_0037,Primary Care,FL,Tampa,E11.9,Type 2 Diabetes,82947,Glucose Test,21.74,2025-02-05 13:00:00,1,00555-0915-02,Gabapentin 300mg,0.113,0,CLEAN,,2025-02,Wednesday,Low
+CLM_000047,MEM_00326,PROV_0030,Psychiatry,FL,Orlando,M25.511,Knee Pain,99215,Office Visit Level 5,174.02,2025-09-25 12:39:00,1,,N/A,0.152,0,CLEAN,,2025-09,Thursday,Low
+CLM_000048,MEM_00239,PROV_0028,Physical Therapy,NC,Unknown,M25.511,Knee Pain,70450,CT Head without Contrast,345.61,2025-05-06 09:17:00,1,,N/A,0.132,0,CLEAN,,2025-05,Tuesday,Low
+CLM_000049,MEM_00238,PROV_0037,Primary Care,FL,Tampa,Z00.00,General Health Exam,72148,MRI Lumbar Spine,850.0,2025-01-15 13:11:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-01,Wednesday,High
+CLM_000050,MEM_00360,PROV_0018,Emergency Medicine,IL,Unknown,M79.3,Fibromyalgia,99213,Office Visit Level 3,58.83,2025-02-13 07:46:00,1,00378-6074-77,Lisinopril 10mg,0.92,1,DUPLICATE_CLAIM,Duplicate claim for same service on same date,2025-02,Thursday,Critical
+CLM_000051,MEM_00389,PROV_0016,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,34.96,2025-08-18 09:18:00,1,68382-0087-06,Hydrocodone,0.212,0,CLEAN,,2025-08,Monday,Low
+CLM_000052,MEM_00125,PROV_0020,Cardiology,TX,Austin,G89.29,Chronic Pain,70450,CT Head without Contrast,368.31,2025-10-11 14:47:00,1,,N/A,0.211,0,CLEAN,,2025-10,Saturday,Low
+CLM_000053,MEM_00360,PROV_0030,Psychiatry,FL,Orlando,J06.9,Upper Respiratory Infection,81001,Urinalysis,21.58,2025-03-03 13:07:00,1,,N/A,0.087,0,CLEAN,,2025-03,Monday,Low
+CLM_000054,MEM_00391,PROV_0045,Pain Management,GA,Unknown,I10,Essential Hypertension,99285,ER Visit Level 5,451.94,2025-09-05 17:48:00,1,,N/A,0.211,0,CLEAN,,2025-09,Friday,Low
+CLM_000055,MEM_00052,PROV_0013,Endocrinology,TX,Dallas,J06.9,Upper Respiratory Infection,99285,ER Visit Level 5,469.37,2025-06-04 19:17:00,1,,N/A,0.229,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000056,MEM_00284,PROV_0019,Pain Management,NY,Rochester,M25.511,Knee Pain,99215,Office Visit Level 5,165.96,2025-02-22 17:18:00,1,68382-0087-06,Hydrocodone,0.096,0,CLEAN,,2025-02,Saturday,Low
+CLM_000057,MEM_00175,PROV_0012,Psychiatry,PA,Philadelphia,E11.9,Type 2 Diabetes,81001,Urinalysis,8.45,2025-02-28 14:31:00,1,68382-0087-06,Hydrocodone,0.81,1,EXCESSIVE_OPIOID,Opioid refill within 15 days of last prescription,2025-02,Friday,Critical
+CLM_000058,MEM_00352,PROV_0004,Orthopedics,CA,Los Angeles,I10,Essential Hypertension,99215,Office Visit Level 5,185.92,2025-02-13 09:35:00,1,00093-0058-01,Atorvastatin 20mg,0.051,0,CLEAN,,2025-02,Thursday,Low
+CLM_000059,MEM_00306,PROV_0040,Primary Care,FL,Orlando,M54.5,Low Back Pain,97112,Neuromuscular Re-education,55.22,2025-08-15 17:27:00,1,,N/A,0.152,0,CLEAN,,2025-08,Friday,Low
+CLM_000060,MEM_00031,PROV_0040,Primary Care,FL,Orlando,M25.511,Knee Pain,99214,Office Visit Level 4,81.69,2025-11-17 18:05:00,1,00378-6074-77,Lisinopril 10mg,0.074,0,CLEAN,,2025-11,Monday,Low
+CLM_000061,MEM_00283,PROV_0005,Orthopedics,NC,Unknown,I10,Essential Hypertension,99213,Office Visit Level 3,66.59,2025-12-19 12:02:00,1,,N/A,0.118,0,CLEAN,,2025-12,Friday,Low
+CLM_000062,MEM_00145,PROV_0045,Pain Management,GA,Unknown,E78.5,Hyperlipidemia,99214,Office Visit Level 4,106.77,2025-11-17 11:27:00,1,00093-0058-01,Atorvastatin 20mg,0.154,0,CLEAN,,2025-11,Monday,Low
+CLM_000063,MEM_00332,PROV_0010,Endocrinology,IL,Unknown,J06.9,Upper Respiratory Infection,99215,Office Visit Level 5,188.08,2025-03-26 17:47:00,1,,N/A,0.191,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000064,MEM_00225,PROV_0008,Physical Therapy,FL,Orlando,E78.5,Hyperlipidemia,20610,Joint Injection,125.15,2025-07-26 16:34:00,1,,N/A,0.242,0,CLEAN,,2025-07,Saturday,Low
+CLM_000065,MEM_00307,PROV_0003,Physical Therapy,NC,Unknown,F41.9,Anxiety Disorder,20610,Joint Injection,118.51,2025-05-09 19:43:00,1,,N/A,0.1,0,CLEAN,,2025-05,Friday,Low
+CLM_000066,MEM_00011,PROV_0049,Endocrinology,NY,New York City,G89.29,Chronic Pain,81001,Urinalysis,-23.38,2025-08-29 15:58:00,1,00310-0800-39,Metformin 500mg,0.107,0,CLEAN,,2025-08,Friday,Low
+CLM_000067,MEM_00300,PROV_0028,Physical Therapy,NC,Unknown,G89.29,Chronic Pain,97110,Therapeutic Exercise 15min,44.47,2025-06-28 13:42:00,1,68382-0087-06,Hydrocodone,0.057,0,CLEAN,,2025-06,Saturday,Low
+CLM_000068,MEM_00169,PROV_0027,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,46.2,2025-07-25 16:02:00,1,,N/A,0.06,0,CLEAN,,2025-07,Friday,Low
+CLM_000069,MEM_00396,PROV_0026,Psychiatry,GA,Unknown,M79.3,Fibromyalgia,99213,Office Visit Level 3,124.26,2025-07-31 19:39:00,1,68382-0087-06,Hydrocodone,0.106,0,CLEAN,,2025-07,Thursday,Low
+CLM_000070,MEM_00227,PROV_0049,Endocrinology,NY,New York City,E11.9,Type 2 Diabetes,99285,ER Visit Level 5,446.15,2025-03-09 15:56:00,1,,N/A,0.079,0,CLEAN,,2025-03,Sunday,Low
+CLM_000071,MEM_00015,PROV_0041,Primary Care,IL,Unknown,Z00.00,General Health Exam,99285,ER Visit Level 5,456.03,2025-10-10 19:14:00,1,00093-0058-01,Atorvastatin 20mg,0.148,0,CLEAN,,2025-10,Friday,Low
+CLM_000072,MEM_00061,PROV_0042,Orthopedics,IL,Unknown,I10,Essential Hypertension,97110,Therapeutic Exercise 15min,67.86,2025-09-18 14:53:00,1,00093-0058-01,Atorvastatin 20mg,0.098,0,CLEAN,,2025-09,Thursday,Low
+CLM_000073,MEM_00125,PROV_0030,Psychiatry,FL,Orlando,M79.3,Fibromyalgia,99215,Office Visit Level 5,195.04,2025-11-03 10:55:00,1,,N/A,0.196,0,CLEAN,,2025-11,Monday,Low
+CLM_000074,MEM_00405,PROV_0027,Orthopedics,PA,Philadelphia,E66.01,Morbid Obesity,97112,Neuromuscular Re-education,78.06,2025-01-02 12:53:00,1,,N/A,0.177,0,CLEAN,,2025-01,Thursday,Low
+CLM_000075,MEM_00229,PROV_0035,Pain Management,TX,Austin,E78.5,Hyperlipidemia,82947,Glucose Test,-8.04,2025-10-06 13:55:00,1,,N/A,0.157,0,CLEAN,,2025-10,Monday,Low
+CLM_000076,MEM_00123,PROV_0037,Primary Care,FL,Tampa,F41.9,Anxiety Disorder,99285,ER Visit Level 5,430.19,2025-01-23 15:45:00,1,59762-5005-01,Xanax 0.5mg,0.058,0,CLEAN,,2025-01,Thursday,Low
+CLM_000077,MEM_00078,PROV_0032,Physical Therapy,FL,Orlando,E11.9,Type 2 Diabetes,99215,Office Visit Level 5,303.61,2025-02-21 15:06:00,1,00555-0915-02,Gabapentin 300mg,0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-02,Friday,High
+CLM_000078,MEM_00074,PROV_0027,Orthopedics,PA,Philadelphia,G89.29,Chronic Pain,99215,Office Visit Level 5,148.99,2025-05-16 14:41:00,0,,N/A,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-05,Friday,Critical
+CLM_000079,MEM_00195,PROV_0021,Psychiatry,NY,New York City,G89.29,Chronic Pain,20610,Joint Injection,121.37,2025-10-05 07:40:00,1,68382-0087-06,Hydrocodone,0.085,0,CLEAN,,2025-10,Sunday,Low
+CLM_000080,MEM_00117,PROV_0048,Psychiatry,IL,Unknown,E10.9,Type 1 Diabetes,83036,A1C Test,11.61,2025-08-16 12:57:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-08,Saturday,High
+CLM_000081,MEM_00408,PROV_0004,Orthopedics,CA,Los Angeles,J06.9,Upper Respiratory Infection,82947,Glucose Test,51.0,2025-03-16 14:36:00,1,,N/A,0.078,0,CLEAN,,2025-03,Sunday,Low
+CLM_000082,MEM_00088,PROV_0012,Psychiatry,PA,Philadelphia,E10.9,Type 1 Diabetes,70450,CT Head without Contrast,334.33,2025-09-12 10:14:00,1,00378-6074-77,Lisinopril 10mg,0.235,0,CLEAN,,2025-09,Friday,Low
+CLM_000083,MEM_00236,PROV_0017,Pain Management,TX,Dallas,G89.29,Chronic Pain,99215,Office Visit Level 5,173.56,2025-05-28 10:04:00,0,68382-0087-06,Hydrocodone,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-05,Wednesday,Critical
+CLM_000084,MEM_00493,PROV_0028,Physical Therapy,NC,Unknown,M25.511,Knee Pain,81001,Urinalysis,31.27,2025-06-04 14:54:00,1,,N/A,0.213,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000085,MEM_00196,PROV_0037,Primary Care,FL,Tampa,E66.01,Morbid Obesity,70450,CT Head without Contrast,325.38,2025-12-25 18:25:00,0,,N/A,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-12,Thursday,Critical
+CLM_000086,MEM_00499,PROV_0004,Orthopedics,CA,Los Angeles,Z00.00,General Health Exam,20610,Joint Injection,87.85,2025-05-27 11:38:00,1,,N/A,0.069,0,CLEAN,,2025-05,Tuesday,Low
+CLM_000087,MEM_00098,PROV_0040,Primary Care,FL,Orlando,J06.9,Upper Respiratory Infection,72148,MRI Lumbar Spine,845.17,2025-11-18 20:02:00,1,00310-0800-39,Metformin 500mg,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-11,Tuesday,High
+CLM_000088,MEM_00187,PROV_0047,Pain Management,NC,Unknown,I10,Essential Hypertension,99214,Office Visit Level 4,115.2,2025-08-01 10:50:00,1,00555-0915-02,Gabapentin 300mg,0.118,0,CLEAN,,2025-08,Friday,Low
+CLM_000089,MEM_00140,PROV_0011,Emergency Medicine,TX,Dallas,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,60.64,2025-06-23 03:29:00,1,00093-0058-01,Atorvastatin 20mg,0.12,0,CLEAN,,2025-06,Monday,Low
+CLM_000090,MEM_00495,PROV_0015,Orthopedics,TX,Houston,G89.29,Chronic Pain,20610,Joint Injection,130.44,2025-10-13 14:00:00,1,59762-5005-01,Xanax 0.5mg,0.227,0,CLEAN,,2025-10,Monday,Low
+CLM_000091,MEM_00233,PROV_0024,Pain Management,IL,Unknown,G89.29,Chronic Pain,20610,Joint Injection,125.94,2025-11-23 09:43:00,1,59762-5005-01,Xanax 0.5mg,0.206,0,CLEAN,,2025-11,Sunday,Low
+CLM_000092,MEM_00318,PROV_0036,Pain Management,IL,Unknown,E66.01,Morbid Obesity,70450,CT Head without Contrast,336.4,2025-02-02 15:58:00,1,,N/A,0.082,0,CLEAN,,2025-02,Sunday,Low
+CLM_000093,MEM_00210,PROV_0008,Physical Therapy,FL,Orlando,I10,Essential Hypertension,99213,Office Visit Level 3,79.65,2025-09-10 11:56:00,1,00093-0058-01,Atorvastatin 20mg,0.23,0,CLEAN,,2025-09,Wednesday,Low
+CLM_000094,MEM_00233,PROV_0024,Pain Management,IL,Unknown,G89.29,Chronic Pain,20610,Joint Injection,125.86,2025-10-28 10:56:00,1,59762-5005-01,Xanax 0.5mg,0.051,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000095,MEM_00427,PROV_0032,Physical Therapy,FL,Orlando,Z00.00,General Health Exam,83036,A1C Test,28.28,2025-01-17 11:28:00,1,00093-0058-01,Atorvastatin 20mg,0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-01,Friday,High
+CLM_000096,MEM_00051,PROV_0044,Cardiology,GA,Unknown,E66.01,Morbid Obesity,97112,Neuromuscular Re-education,87.32,2025-02-01 11:07:00,1,00555-0915-02,Gabapentin 300mg,0.18,0,CLEAN,,2025-02,Saturday,Low
+CLM_000097,MEM_00109,PROV_0042,Orthopedics,IL,Unknown,G89.29,Chronic Pain,70450,CT Head without Contrast,359.48,2025-06-20 10:50:00,1,00002-8215-01,Humalog (Insulin),0.095,0,CLEAN,,2025-06,Friday,Low
+CLM_000098,MEM_00425,PROV_0049,Endocrinology,NY,New York City,M79.3,Fibromyalgia,99285,ER Visit Level 5,430.51,2025-06-18 17:00:00,1,00378-6074-77,Lisinopril 10mg,0.115,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000099,MEM_00075,PROV_0009,Orthopedics,PA,Philadelphia,M79.3,Fibromyalgia,81001,Urinalysis,30.74,2025-12-05 10:00:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-12,Friday,High
+CLM_000100,MEM_00122,PROV_0038,Endocrinology,PA,Philadelphia,E66.01,Morbid Obesity,99213,Office Visit Level 3,94.27,2025-01-27 14:33:00,1,,N/A,0.182,0,CLEAN,,2025-01,Monday,Low
+CLM_000101,MEM_00244,PROV_0029,Emergency Medicine,MI,Unknown,E66.01,Morbid Obesity,97112,Neuromuscular Re-education,58.26,2025-09-15 07:39:00,1,68382-0087-06,Hydrocodone,0.81,1,EXCESSIVE_OPIOID,Opioid refill within 15 days of last prescription,2025-09,Monday,Critical
+CLM_000102,MEM_00466,PROV_0043,Endocrinology,NY,Rochester,M79.3,Fibromyalgia,81001,Urinalysis,10.09,2025-01-16 19:25:00,1,,N/A,0.103,0,CLEAN,,2025-01,Thursday,Low
+CLM_000103,MEM_00252,PROV_0046,Orthopedics,MI,Unknown,E78.5,Hyperlipidemia,99214,Office Visit Level 4,94.93,2025-11-08 10:17:00,1,00555-0915-02,Gabapentin 300mg,0.099,0,CLEAN,,2025-11,Saturday,Low
+CLM_000104,MEM_00281,PROV_0046,Orthopedics,MI,Unknown,E66.01,Morbid Obesity,83036,A1C Test,28.46,2025-08-21 14:06:00,1,00093-0058-01,Atorvastatin 20mg,0.228,0,CLEAN,,2025-08,Thursday,Low
+CLM_000105,MEM_00437,PROV_0042,Orthopedics,IL,Unknown,G89.29,Chronic Pain,97112,Neuromuscular Re-education,56.82,2025-08-09 11:26:00,1,00378-6074-77,Lisinopril 10mg,0.176,0,CLEAN,,2025-08,Saturday,Low
+CLM_000106,MEM_00205,PROV_0027,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,99214,Office Visit Level 4,110.26,2025-06-10 13:09:00,1,,N/A,0.165,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000107,MEM_00048,PROV_0028,Physical Therapy,NC,Unknown,E10.9,Type 1 Diabetes,20610,Joint Injection,149.07,2025-10-12 22:35:00,1,00310-0800-39,Metformin 500mg,0.149,0,CLEAN,,2025-10,Sunday,Low
+CLM_000108,MEM_00211,PROV_0023,Primary Care,CA,Los Angeles,G89.29,Chronic Pain,83036,A1C Test,42.51,2025-05-28 13:06:00,1,00002-8215-01,Humalog (Insulin),0.106,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000109,MEM_00080,PROV_0043,Endocrinology,NY,Rochester,E78.5,Hyperlipidemia,99285,ER Visit Level 5,432.86,2025-10-12 12:36:00,1,00555-0915-02,Gabapentin 300mg,0.055,0,CLEAN,,2025-10,Sunday,Low
+CLM_000110,MEM_00433,PROV_0036,Pain Management,IL,Unknown,Z00.00,General Health Exam,70450,CT Head without Contrast,328.58,2025-11-08 12:01:00,1,00002-8215-01,Humalog (Insulin),0.238,0,CLEAN,,2025-11,Saturday,Low
+CLM_000111,MEM_00391,PROV_0020,Cardiology,TX,Austin,E66.01,Morbid Obesity,82947,Glucose Test,29.65,2025-03-15 14:04:00,1,,N/A,0.241,0,CLEAN,,2025-03,Saturday,Low
+CLM_000112,MEM_00498,PROV_0002,Endocrinology,NY,New York City,E10.9,Type 1 Diabetes,20610,Joint Injection,115.53,2025-08-03 10:23:00,1,59762-5005-01,Xanax 0.5mg,0.053,0,CLEAN,,2025-08,Sunday,Low
+CLM_000113,MEM_00398,PROV_0037,Primary Care,FL,Tampa,Z00.00,General Health Exam,99214,Office Visit Level 4,124.28,2025-03-22 08:43:00,1,00310-0800-39,Metformin 500mg,0.236,0,CLEAN,,2025-03,Saturday,Low
+CLM_000114,MEM_00227,PROV_0027,Orthopedics,PA,Philadelphia,J06.9,Upper Respiratory Infection,99285,ER Visit Level 5,459.46,2025-06-26 12:43:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-06,Thursday,High
+CLM_000115,MEM_00113,PROV_0026,Psychiatry,GA,Unknown,Z00.00,General Health Exam,99213,Office Visit Level 3,73.54,2025-06-04 10:48:00,1,,N/A,0.221,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000116,MEM_00062,PROV_0001,Pain Management,TX,Houston,E78.5,Hyperlipidemia,20610,Joint Injection,103.06,2025-03-08 11:32:00,1,,N/A,0.22,0,CLEAN,,2025-03,Saturday,Low
+CLM_000117,MEM_00413,PROV_0023,Primary Care,CA,Los Angeles,E10.9,Type 1 Diabetes,83036,A1C Test,-0.3,2025-08-12 22:55:00,1,00002-8215-01,Humalog (Insulin),0.113,0,CLEAN,,2025-08,Tuesday,Low
+CLM_000118,MEM_00294,PROV_0026,Psychiatry,GA,Unknown,M25.511,Knee Pain,72148,MRI Lumbar Spine,604.28,2025-02-28 13:10:00,1,,N/A,0.237,0,CLEAN,,2025-02,Friday,Low
+CLM_000119,MEM_00186,PROV_0006,Orthopedics,NC,Unknown,F41.9,Anxiety Disorder,99214,Office Visit Level 4,85.09,2025-10-29 09:25:00,1,,N/A,0.189,0,CLEAN,,2025-10,Wednesday,Low
+CLM_000120,MEM_00114,PROV_0022,Emergency Medicine,PA,Philadelphia,I10,Essential Hypertension,99214,Office Visit Level 4,92.32,2025-09-29 16:12:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-09,Monday,High
+CLM_000121,MEM_00373,PROV_0042,Orthopedics,IL,Unknown,I10,Essential Hypertension,99285,ER Visit Level 5,453.07,2025-05-12 17:09:00,1,,N/A,0.248,0,CLEAN,,2025-05,Monday,Low
+CLM_000122,MEM_00039,PROV_0012,Psychiatry,PA,Philadelphia,G89.29,Chronic Pain,97110,Therapeutic Exercise 15min,46.16,2025-10-16 15:43:00,1,,N/A,0.225,0,CLEAN,,2025-10,Thursday,Low
+CLM_000123,MEM_00320,PROV_0021,Psychiatry,NY,New York City,G89.29,Chronic Pain,82947,Glucose Test,-2.86,2025-02-04 18:19:00,1,,N/A,0.198,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000124,MEM_00029,PROV_0023,Primary Care,CA,Los Angeles,M79.3,Fibromyalgia,99214,Office Visit Level 4,131.66,2025-08-20 19:18:00,1,,N/A,0.122,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000125,MEM_00438,PROV_0006,Orthopedics,NC,Unknown,Z00.00,General Health Exam,70450,CT Head without Contrast,371.08,2025-10-25 08:28:00,1,68382-0087-06,Hydrocodone,0.109,0,CLEAN,,2025-10,Saturday,Low
+CLM_000126,MEM_00165,PROV_0039,Cardiology,PA,Philadelphia,E78.5,Hyperlipidemia,97112,Neuromuscular Re-education,60.3,2025-02-01 13:45:00,1,,N/A,0.223,0,CLEAN,,2025-02,Saturday,Low
+CLM_000127,MEM_00089,PROV_0003,Physical Therapy,NC,Unknown,M54.5,Low Back Pain,20610,Joint Injection,130.28,2025-08-13 17:10:00,1,,N/A,0.233,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000128,MEM_00145,PROV_0025,Emergency Medicine,NY,Rochester,F41.9,Anxiety Disorder,82947,Glucose Test,30.3,2025-11-20 20:21:00,1,00002-8215-01,Humalog (Insulin),0.21,0,CLEAN,,2025-11,Thursday,Low
+CLM_000129,MEM_00286,PROV_0044,Cardiology,GA,Unknown,F41.9,Anxiety Disorder,81001,Urinalysis,92.05,2025-12-03 17:55:00,1,,N/A,0.18,0,CLEAN,,2025-12,Wednesday,Low
+CLM_000130,MEM_00299,PROV_0043,Endocrinology,NY,Rochester,I10,Essential Hypertension,82947,Glucose Test,39.08,2025-12-02 14:08:00,1,,N/A,0.228,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000131,MEM_00044,PROV_0020,Cardiology,TX,Austin,M79.3,Fibromyalgia,83036,A1C Test,43.03,2025-03-07 18:58:00,1,00555-0915-02,Gabapentin 300mg,0.118,0,CLEAN,,2025-03,Friday,Low
+CLM_000132,MEM_00344,PROV_0028,Physical Therapy,NC,Unknown,M79.3,Fibromyalgia,82947,Glucose Test,4.54,2025-06-08 11:21:00,1,,N/A,0.166,0,CLEAN,,2025-06,Sunday,Low
+CLM_000133,MEM_00116,PROV_0009,Orthopedics,PA,Philadelphia,I10,Essential Hypertension,99214,Office Visit Level 4,105.26,2025-02-21 16:53:00,1,,N/A,0.057,0,CLEAN,,2025-02,Friday,Low
+CLM_000134,MEM_00020,PROV_0043,Endocrinology,NY,Rochester,E66.01,Morbid Obesity,70450,CT Head without Contrast,396.29,2025-07-12 10:53:00,1,,N/A,0.107,0,CLEAN,,2025-07,Saturday,Low
+CLM_000135,MEM_00415,PROV_0011,Emergency Medicine,TX,Dallas,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,7.65,2025-07-06 21:46:00,1,,N/A,0.168,0,CLEAN,,2025-07,Sunday,Low
+CLM_000136,MEM_00313,PROV_0019,Pain Management,NY,Rochester,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,35.56,2025-05-03 15:57:00,1,,N/A,0.075,0,CLEAN,,2025-05,Saturday,Low
+CLM_000137,MEM_00485,PROV_0037,Primary Care,FL,Tampa,E78.5,Hyperlipidemia,97110,Therapeutic Exercise 15min,66.78,2025-09-15 10:52:00,1,59762-5005-01,Xanax 0.5mg,0.154,0,CLEAN,,2025-09,Monday,Low
+CLM_000138,MEM_00329,PROV_0031,Cardiology,CA,Los Angeles,E66.01,Morbid Obesity,97112,Neuromuscular Re-education,35.69,2025-05-26 07:28:00,1,00169-7501-11,Ozempic (GLP-1),0.175,0,CLEAN,,2025-05,Monday,Low
+CLM_000139,MEM_00224,PROV_0006,Orthopedics,NC,Unknown,M54.5,Low Back Pain,97110,Therapeutic Exercise 15min,58.59,2025-08-01 19:15:00,1,00002-8215-01,Humalog (Insulin),0.067,0,CLEAN,,2025-08,Friday,Low
+CLM_000140,MEM_00192,PROV_0015,Orthopedics,TX,Houston,E11.9,Type 2 Diabetes,82947,Glucose Test,20.91,2025-03-16 12:58:00,1,00555-0915-02,Gabapentin 300mg,0.158,0,CLEAN,,2025-03,Sunday,Low
+CLM_000141,MEM_00072,PROV_0049,Endocrinology,NY,New York City,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,31.97,2025-01-03 08:16:00,1,,N/A,0.177,0,CLEAN,,2025-01,Friday,Low
+CLM_000142,MEM_00281,PROV_0047,Pain Management,NC,Unknown,Z00.00,General Health Exam,97112,Neuromuscular Re-education,9.5,2025-05-28 09:03:00,1,,N/A,0.209,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000143,MEM_00057,PROV_0032,Physical Therapy,FL,Orlando,Z00.00,General Health Exam,97112,Neuromuscular Re-education,53.73,2025-09-21 10:18:00,1,,N/A,0.104,0,CLEAN,,2025-09,Sunday,Low
+CLM_000144,MEM_00293,PROV_0027,Orthopedics,PA,Philadelphia,I10,Essential Hypertension,72148,MRI Lumbar Spine,584.15,2025-02-04 16:32:00,1,00555-0915-02,Gabapentin 300mg,0.055,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000145,MEM_00326,PROV_0025,Emergency Medicine,NY,Rochester,E66.01,Morbid Obesity,81001,Urinalysis,12.71,2025-02-04 11:15:00,1,00555-0915-02,Gabapentin 300mg,0.243,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000146,MEM_00054,PROV_0050,Orthopedics,CA,San Diego,Z00.00,General Health Exam,20610,Joint Injection,130.1,2025-01-23 13:52:00,1,00310-0800-39,Metformin 500mg,0.132,0,CLEAN,,2025-01,Thursday,Low
+CLM_000147,MEM_00399,PROV_0044,Cardiology,GA,Unknown,E78.5,Hyperlipidemia,20610,Joint Injection,137.32,2025-04-04 09:45:00,1,,N/A,0.085,0,CLEAN,,2025-04,Friday,Low
+CLM_000148,MEM_00019,PROV_0019,Pain Management,NY,Rochester,M54.5,Low Back Pain,99213,Office Visit Level 3,65.5,2025-06-11 16:25:00,1,00002-8215-01,Humalog (Insulin),0.16,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000149,MEM_00019,PROV_0049,Endocrinology,NY,New York City,G89.29,Chronic Pain,99285,ER Visit Level 5,436.93,2025-01-25 13:17:00,1,,N/A,0.193,0,CLEAN,,2025-01,Saturday,Low
+CLM_000150,MEM_00224,PROV_0026,Psychiatry,GA,Unknown,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,19.78,2025-06-23 15:44:00,1,59762-5005-01,Xanax 0.5mg,0.92,1,DUPLICATE_CLAIM,Duplicate claim for same service on same date,2025-06,Monday,Critical
+CLM_000151,MEM_00409,PROV_0034,Primary Care,GA,Unknown,J06.9,Upper Respiratory Infection,99214,Office Visit Level 4,128.36,2025-08-09 10:34:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-08,Saturday,High
+CLM_000152,MEM_00041,PROV_0021,Psychiatry,NY,New York City,G89.29,Chronic Pain,81001,Urinalysis,57.44,2025-11-05 10:44:00,1,,N/A,0.134,0,CLEAN,,2025-11,Wednesday,Low
+CLM_000153,MEM_00022,PROV_0047,Pain Management,NC,Unknown,E66.01,Morbid Obesity,70450,CT Head without Contrast,370.65,2025-11-24 08:04:00,1,00093-0058-01,Atorvastatin 20mg,0.1,0,CLEAN,,2025-11,Monday,Low
+CLM_000154,MEM_00348,PROV_0011,Emergency Medicine,TX,Dallas,E11.9,Type 2 Diabetes,99215,Office Visit Level 5,205.34,2025-01-18 04:04:00,1,68382-0087-06,Hydrocodone,0.053,0,CLEAN,,2025-01,Saturday,Low
+CLM_000155,MEM_00188,PROV_0024,Pain Management,IL,Unknown,F41.9,Anxiety Disorder,70450,CT Head without Contrast,335.85,2025-03-20 13:23:00,1,,N/A,0.073,0,CLEAN,,2025-03,Thursday,Low
+CLM_000156,MEM_00294,PROV_0009,Orthopedics,PA,Philadelphia,M79.3,Fibromyalgia,82947,Glucose Test,28.88,2025-11-29 09:01:00,1,,N/A,0.145,0,CLEAN,,2025-11,Saturday,Low
+CLM_000157,MEM_00266,PROV_0025,Emergency Medicine,NY,Rochester,M79.3,Fibromyalgia,99214,Office Visit Level 4,125.49,2025-05-14 22:28:00,1,,N/A,0.07,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000158,MEM_00147,PROV_0045,Pain Management,GA,Unknown,E78.5,Hyperlipidemia,99285,ER Visit Level 5,385.17,2025-02-07 15:05:00,1,,N/A,0.085,0,CLEAN,,2025-02,Friday,Low
+CLM_000159,MEM_00164,PROV_0043,Endocrinology,NY,Rochester,E66.01,Morbid Obesity,20610,Joint Injection,99.51,2025-10-05 12:54:00,1,,N/A,0.137,0,CLEAN,,2025-10,Sunday,Low
+CLM_000160,MEM_00475,PROV_0045,Pain Management,GA,Unknown,G89.29,Chronic Pain,99215,Office Visit Level 5,212.65,2025-03-04 10:15:00,1,00378-6074-77,Lisinopril 10mg,0.177,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000161,MEM_00185,PROV_0036,Pain Management,IL,Unknown,Z00.00,General Health Exam,82947,Glucose Test,-8.6,2025-10-10 09:04:00,1,,N/A,0.059,0,CLEAN,,2025-10,Friday,Low
+CLM_000162,MEM_00368,PROV_0047,Pain Management,NC,Unknown,E78.5,Hyperlipidemia,97112,Neuromuscular Re-education,78.83,2025-07-29 09:08:00,1,,N/A,0.151,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000163,MEM_00177,PROV_0009,Orthopedics,PA,Philadelphia,M79.3,Fibromyalgia,72148,MRI Lumbar Spine,571.28,2025-08-10 08:53:00,1,00310-0800-39,Metformin 500mg,0.221,0,CLEAN,,2025-08,Sunday,Low
+CLM_000164,MEM_00083,PROV_0021,Psychiatry,NY,New York City,M25.511,Knee Pain,99285,ER Visit Level 5,430.37,2025-09-23 09:16:00,1,,N/A,0.064,0,CLEAN,,2025-09,Tuesday,Low
+CLM_000165,MEM_00283,PROV_0018,Emergency Medicine,IL,Unknown,I10,Essential Hypertension,72148,MRI Lumbar Spine,609.24,2025-10-01 02:32:00,1,,N/A,0.178,0,CLEAN,,2025-10,Wednesday,Low
+CLM_000166,MEM_00079,PROV_0011,Emergency Medicine,TX,Dallas,G89.29,Chronic Pain,70450,CT Head without Contrast,351.4,2025-10-16 01:52:00,1,00555-0915-02,Gabapentin 300mg,0.238,0,CLEAN,,2025-10,Thursday,Low
+CLM_000167,MEM_00486,PROV_0042,Orthopedics,IL,Unknown,Z00.00,General Health Exam,81001,Urinalysis,7.29,2025-11-13 15:56:00,1,59762-5005-01,Xanax 0.5mg,0.165,0,CLEAN,,2025-11,Thursday,Low
+CLM_000168,MEM_00329,PROV_0020,Cardiology,TX,Austin,E78.5,Hyperlipidemia,99285,ER Visit Level 5,481.72,2025-06-02 08:10:00,1,59762-5005-01,Xanax 0.5mg,0.142,0,CLEAN,,2025-06,Monday,Low
+CLM_000169,MEM_00238,PROV_0014,Orthopedics,PA,Pittsburgh,E66.01,Morbid Obesity,70450,CT Head without Contrast,325.24,2025-06-13 13:25:00,1,,N/A,0.159,0,CLEAN,,2025-06,Friday,Low
+CLM_000170,MEM_00264,PROV_0036,Pain Management,IL,Unknown,E10.9,Type 1 Diabetes,82947,Glucose Test,16.96,2025-03-04 11:09:00,1,,N/A,0.242,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000171,MEM_00485,PROV_0025,Emergency Medicine,NY,Rochester,Z00.00,General Health Exam,83036,A1C Test,41.77,2025-03-23 10:59:00,1,,N/A,0.231,0,CLEAN,,2025-03,Sunday,Low
+CLM_000172,MEM_00098,PROV_0049,Endocrinology,NY,New York City,I10,Essential Hypertension,97110,Therapeutic Exercise 15min,50.62,2025-09-13 15:01:00,1,68382-0087-06,Hydrocodone,0.064,0,CLEAN,,2025-09,Saturday,Low
+CLM_000173,MEM_00259,PROV_0030,Psychiatry,FL,Orlando,M54.5,Low Back Pain,99285,ER Visit Level 5,437.55,2025-01-26 17:56:00,1,00002-8215-01,Humalog (Insulin),0.114,0,CLEAN,,2025-01,Sunday,Low
+CLM_000174,MEM_00147,PROV_0035,Pain Management,TX,Austin,E11.9,Type 2 Diabetes,99214,Office Visit Level 4,98.21,2025-05-16 14:23:00,1,,N/A,0.074,0,CLEAN,,2025-05,Friday,Low
+CLM_000175,MEM_00292,PROV_0036,Pain Management,IL,Unknown,M54.5,Low Back Pain,82947,Glucose Test,36.99,2025-07-17 16:17:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-07,Thursday,High
+CLM_000176,MEM_00061,PROV_0009,Orthopedics,PA,Philadelphia,E10.9,Type 1 Diabetes,83036,A1C Test,47.99,2025-06-23 13:48:00,1,,N/A,0.197,0,CLEAN,,2025-06,Monday,Low
+CLM_000177,MEM_00261,PROV_0026,Psychiatry,GA,Unknown,M79.3,Fibromyalgia,99213,Office Visit Level 3,81.15,2025-03-12 15:33:00,1,,N/A,0.211,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000178,MEM_00458,PROV_0033,Physical Therapy,TX,Dallas,I10,Essential Hypertension,82947,Glucose Test,3.42,2025-03-25 17:47:00,1,00555-0915-02,Gabapentin 300mg,0.2,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000179,MEM_00260,PROV_0033,Physical Therapy,TX,Dallas,M79.3,Fibromyalgia,97110,Therapeutic Exercise 15min,33.8,2025-09-01 13:21:00,1,00093-0058-01,Atorvastatin 20mg,0.211,0,CLEAN,,2025-09,Monday,Low
+CLM_000180,MEM_00214,PROV_0038,Endocrinology,PA,Philadelphia,J06.9,Upper Respiratory Infection,20610,Joint Injection,119.58,2025-11-02 18:50:00,1,00002-8215-01,Humalog (Insulin),0.124,0,CLEAN,,2025-11,Sunday,Low
+CLM_000181,MEM_00117,PROV_0047,Pain Management,NC,Unknown,E11.9,Type 2 Diabetes,70450,CT Head without Contrast,352.35,2025-09-26 17:49:00,1,,N/A,0.205,0,CLEAN,,2025-09,Friday,Low
+CLM_000182,MEM_00486,PROV_0045,Pain Management,GA,Unknown,E10.9,Type 1 Diabetes,99285,ER Visit Level 5,460.94,2025-06-10 14:44:00,1,,N/A,0.222,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000183,MEM_00397,PROV_0040,Primary Care,FL,Orlando,E78.5,Hyperlipidemia,20610,Joint Injection,115.96,2025-09-23 13:42:00,1,00310-0800-39,Metformin 500mg,0.136,0,CLEAN,,2025-09,Tuesday,Low
+CLM_000184,MEM_00161,PROV_0012,Psychiatry,PA,Philadelphia,E78.5,Hyperlipidemia,97112,Neuromuscular Re-education,66.51,2025-07-01 18:41:00,1,,N/A,0.071,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000185,MEM_00248,PROV_0013,Endocrinology,TX,Dallas,M54.5,Low Back Pain,81001,Urinalysis,31.27,2025-06-02 11:44:00,1,00378-6074-77,Lisinopril 10mg,0.231,0,CLEAN,,2025-06,Monday,Low
+CLM_000186,MEM_00246,PROV_0023,Primary Care,CA,Los Angeles,M79.3,Fibromyalgia,20610,Joint Injection,146.11,2025-03-04 16:24:00,1,,N/A,0.114,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000187,MEM_00489,PROV_0050,Orthopedics,CA,San Diego,I10,Essential Hypertension,81001,Urinalysis,15.42,2026-01-01 22:41:00,1,,N/A,0.229,0,CLEAN,,2026-01,Thursday,Low
+CLM_000188,MEM_00110,PROV_0013,Endocrinology,TX,Dallas,M79.3,Fibromyalgia,81001,Urinalysis,21.48,2025-03-12 17:15:00,1,00093-0058-01,Atorvastatin 20mg,0.24,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000189,MEM_00464,PROV_0034,Primary Care,GA,Unknown,M54.5,Low Back Pain,72148,MRI Lumbar Spine,836.36,2025-02-21 15:06:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-02,Friday,High
+CLM_000190,MEM_00282,PROV_0011,Emergency Medicine,TX,Dallas,F41.9,Anxiety Disorder,72148,MRI Lumbar Spine,817.09,2025-09-02 20:12:00,1,68382-0087-06,Hydrocodone,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-09,Tuesday,High
+CLM_000191,MEM_00331,PROV_0004,Orthopedics,CA,Los Angeles,E10.9,Type 1 Diabetes,72148,MRI Lumbar Spine,898.59,2025-03-31 10:59:00,1,00002-8215-01,Humalog (Insulin),0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-03,Monday,High
+CLM_000192,MEM_00254,PROV_0012,Psychiatry,PA,Philadelphia,M25.511,Knee Pain,81001,Urinalysis,38.16,2025-06-02 09:59:00,1,00002-8215-01,Humalog (Insulin),0.208,0,CLEAN,,2025-06,Monday,Low
+CLM_000193,MEM_00329,PROV_0035,Pain Management,TX,Austin,M79.3,Fibromyalgia,97110,Therapeutic Exercise 15min,60.83,2025-09-16 11:51:00,1,00310-0800-39,Metformin 500mg,0.208,0,CLEAN,,2025-09,Tuesday,Low
+CLM_000194,MEM_00375,PROV_0030,Psychiatry,FL,Orlando,G89.29,Chronic Pain,81001,Urinalysis,14.76,2025-06-22 17:43:00,1,00002-8215-01,Humalog (Insulin),0.062,0,CLEAN,,2025-06,Sunday,Low
+CLM_000195,MEM_00313,PROV_0041,Primary Care,IL,Unknown,F41.9,Anxiety Disorder,83036,A1C Test,12.05,2025-07-25 10:08:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-07,Friday,High
+CLM_000196,MEM_00128,PROV_0001,Pain Management,TX,Houston,J06.9,Upper Respiratory Infection,83036,A1C Test,49.5,2025-05-17 12:37:00,1,,N/A,0.12,0,CLEAN,,2025-05,Saturday,Low
+CLM_000197,MEM_00134,PROV_0042,Orthopedics,IL,Unknown,E66.01,Morbid Obesity,20610,Joint Injection,117.06,2025-12-08 12:10:00,1,,N/A,0.073,0,CLEAN,,2025-12,Monday,Low
+CLM_000198,MEM_00473,PROV_0046,Orthopedics,MI,Unknown,J06.9,Upper Respiratory Infection,20610,Joint Injection,128.26,2025-06-01 11:14:00,1,,N/A,0.174,0,CLEAN,,2025-06,Sunday,Low
+CLM_000199,MEM_00233,PROV_0048,Psychiatry,IL,Unknown,Z00.00,General Health Exam,82947,Glucose Test,8.73,2025-10-09 16:51:00,1,,N/A,0.07,0,CLEAN,,2025-10,Thursday,Low
+CLM_000200,MEM_00391,PROV_0016,Orthopedics,PA,Philadelphia,G89.29,Chronic Pain,70450,CT Head without Contrast,354.9,2025-09-27 13:04:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-09,Saturday,High
+CLM_000201,MEM_00425,PROV_0036,Pain Management,IL,Unknown,M79.3,Fibromyalgia,99285,ER Visit Level 5,439.86,2025-03-26 16:28:00,1,00310-0800-39,Metformin 500mg,0.214,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000202,MEM_00368,PROV_0038,Endocrinology,PA,Philadelphia,E78.5,Hyperlipidemia,99214,Office Visit Level 4,100.58,2025-01-29 16:26:00,1,68382-0087-06,Hydrocodone,0.067,0,CLEAN,,2025-01,Wednesday,Low
+CLM_000203,MEM_00287,PROV_0030,Psychiatry,FL,Orlando,G89.29,Chronic Pain,81001,Urinalysis,19.64,2025-05-11 11:37:00,1,59762-5005-01,Xanax 0.5mg,0.247,0,CLEAN,,2025-05,Sunday,Low
+CLM_000204,MEM_00177,PROV_0045,Pain Management,GA,Unknown,E10.9,Type 1 Diabetes,97112,Neuromuscular Re-education,21.04,2025-08-30 19:49:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-08,Saturday,High
+CLM_000205,MEM_00374,PROV_0042,Orthopedics,IL,Unknown,F41.9,Anxiety Disorder,82947,Glucose Test,-8.15,2025-08-18 14:24:00,1,59762-5005-01,Xanax 0.5mg,0.239,0,CLEAN,,2025-08,Monday,Low
+CLM_000206,MEM_00339,PROV_0035,Pain Management,TX,Austin,I10,Essential Hypertension,72148,MRI Lumbar Spine,819.88,2025-04-02 14:33:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-04,Wednesday,High
+CLM_000207,MEM_00002,PROV_0049,Endocrinology,NY,New York City,E11.9,Type 2 Diabetes,81001,Urinalysis,10.73,2025-10-06 14:52:00,1,,N/A,0.162,0,CLEAN,,2025-10,Monday,Low
+CLM_000208,MEM_00178,PROV_0010,Endocrinology,IL,Unknown,J06.9,Upper Respiratory Infection,99285,ER Visit Level 5,467.15,2025-01-17 14:39:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-01,Friday,High
+CLM_000209,MEM_00456,PROV_0002,Endocrinology,NY,New York City,M54.5,Low Back Pain,99285,ER Visit Level 5,446.8,2025-11-01 20:45:00,1,,N/A,0.149,0,CLEAN,,2025-11,Saturday,Low
+CLM_000210,MEM_00023,PROV_0026,Psychiatry,GA,Unknown,E78.5,Hyperlipidemia,99285,ER Visit Level 5,449.63,2025-03-13 12:14:00,1,00002-8215-01,Humalog (Insulin),0.061,0,CLEAN,,2025-03,Thursday,Low
+CLM_000211,MEM_00296,PROV_0039,Cardiology,PA,Philadelphia,G89.29,Chronic Pain,82947,Glucose Test,14.23,2025-03-15 16:14:00,1,,N/A,0.074,0,CLEAN,,2025-03,Saturday,Low
+CLM_000212,MEM_00032,PROV_0036,Pain Management,IL,Unknown,Z00.00,General Health Exam,20610,Joint Injection,126.45,2025-10-12 13:41:00,1,59762-5005-01,Xanax 0.5mg,0.199,0,CLEAN,,2025-10,Sunday,Low
+CLM_000213,MEM_00269,PROV_0021,Psychiatry,NY,New York City,M25.511,Knee Pain,83036,A1C Test,13.46,2025-06-03 16:30:00,1,,N/A,0.167,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000214,MEM_00154,PROV_0046,Orthopedics,MI,Unknown,I10,Essential Hypertension,97110,Therapeutic Exercise 15min,42.82,2025-08-02 10:24:00,1,59762-5005-01,Xanax 0.5mg,0.107,0,CLEAN,,2025-08,Saturday,Low
+CLM_000215,MEM_00170,PROV_0042,Orthopedics,IL,Unknown,E10.9,Type 1 Diabetes,97110,Therapeutic Exercise 15min,53.03,2025-10-02 11:03:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-10,Thursday,High
+CLM_000216,MEM_00310,PROV_0039,Cardiology,PA,Philadelphia,E11.9,Type 2 Diabetes,99214,Office Visit Level 4,114.48,2025-10-28 16:13:00,1,,N/A,0.065,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000217,MEM_00465,PROV_0022,Emergency Medicine,PA,Philadelphia,J06.9,Upper Respiratory Infection,99213,Office Visit Level 3,75.25,2025-04-08 23:07:00,1,,N/A,0.161,0,CLEAN,,2025-04,Tuesday,Low
+CLM_000218,MEM_00246,PROV_0016,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,70450,CT Head without Contrast,350.49,2025-05-03 12:24:00,1,59762-5005-01,Xanax 0.5mg,0.176,0,CLEAN,,2025-05,Saturday,Low
+CLM_000219,MEM_00184,PROV_0020,Cardiology,TX,Austin,J06.9,Upper Respiratory Infection,82947,Glucose Test,29.96,2025-08-27 22:30:00,1,68382-0087-06,Hydrocodone,0.189,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000220,MEM_00469,PROV_0014,Orthopedics,PA,Pittsburgh,E66.01,Morbid Obesity,82947,Glucose Test,63.06,2025-10-16 10:01:00,1,,N/A,0.167,0,CLEAN,,2025-10,Thursday,Low
+CLM_000221,MEM_00300,PROV_0038,Endocrinology,PA,Philadelphia,M25.511,Knee Pain,83036,A1C Test,14.65,2025-04-11 14:36:00,1,,N/A,0.23,0,CLEAN,,2025-04,Friday,Low
+CLM_000222,MEM_00336,PROV_0044,Cardiology,GA,Unknown,E66.01,Morbid Obesity,81001,Urinalysis,58.8,2025-11-25 15:10:00,1,68382-0087-06,Hydrocodone,0.105,0,CLEAN,,2025-11,Tuesday,Low
+CLM_000223,MEM_00087,PROV_0009,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,97112,Neuromuscular Re-education,33.83,2025-10-05 08:33:00,1,,N/A,0.088,0,CLEAN,,2025-10,Sunday,Low
+CLM_000224,MEM_00039,PROV_0043,Endocrinology,NY,Rochester,E11.9,Type 2 Diabetes,99213,Office Visit Level 3,32.52,2025-11-19 10:00:00,1,,N/A,0.167,0,CLEAN,,2025-11,Wednesday,Low
+CLM_000225,MEM_00192,PROV_0004,Orthopedics,CA,Los Angeles,Z00.00,General Health Exam,72148,MRI Lumbar Spine,589.48,2025-12-04 08:34:00,1,68382-0087-06,Hydrocodone,0.066,0,CLEAN,,2025-12,Thursday,Low
+CLM_000226,MEM_00370,PROV_0018,Emergency Medicine,IL,Unknown,M79.3,Fibromyalgia,81001,Urinalysis,21.84,2025-12-24 21:27:00,1,,N/A,0.112,0,CLEAN,,2025-12,Wednesday,Low
+CLM_000227,MEM_00050,PROV_0034,Primary Care,GA,Unknown,I10,Essential Hypertension,99285,ER Visit Level 5,487.52,2025-09-27 13:17:00,1,,N/A,0.213,0,CLEAN,,2025-09,Saturday,Low
+CLM_000228,MEM_00192,PROV_0026,Psychiatry,GA,Unknown,E78.5,Hyperlipidemia,70450,CT Head without Contrast,332.03,2025-12-23 18:52:00,1,,N/A,0.232,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000229,MEM_00440,PROV_0042,Orthopedics,IL,Unknown,E11.9,Type 2 Diabetes,99214,Office Visit Level 4,119.84,2025-07-13 08:40:00,1,,N/A,0.215,0,CLEAN,,2025-07,Sunday,Low
+CLM_000230,MEM_00043,PROV_0032,Physical Therapy,FL,Orlando,F41.9,Anxiety Disorder,72148,MRI Lumbar Spine,803.03,2025-09-28 11:13:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-09,Sunday,High
+CLM_000231,MEM_00039,PROV_0044,Cardiology,GA,Unknown,J06.9,Upper Respiratory Infection,97112,Neuromuscular Re-education,86.63,2025-04-02 13:01:00,1,00002-8215-01,Humalog (Insulin),0.223,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000232,MEM_00386,PROV_0046,Orthopedics,MI,Unknown,F41.9,Anxiety Disorder,99214,Office Visit Level 4,133.59,2025-10-16 14:43:00,1,,N/A,0.247,0,CLEAN,,2025-10,Thursday,Low
+CLM_000233,MEM_00387,PROV_0048,Psychiatry,IL,Unknown,I10,Essential Hypertension,20610,Joint Injection,110.62,2025-01-28 19:04:00,1,00555-0915-02,Gabapentin 300mg,0.08,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000234,MEM_00315,PROV_0039,Cardiology,PA,Philadelphia,F41.9,Anxiety Disorder,82947,Glucose Test,-14.26,2025-05-20 15:31:00,1,,N/A,0.244,0,CLEAN,,2025-05,Tuesday,Low
+CLM_000235,MEM_00482,PROV_0025,Emergency Medicine,NY,Rochester,F41.9,Anxiety Disorder,99215,Office Visit Level 5,207.08,2025-02-13 19:18:00,1,59762-5005-01,Xanax 0.5mg,0.218,0,CLEAN,,2025-02,Thursday,Low
+CLM_000236,MEM_00043,PROV_0018,Emergency Medicine,IL,Unknown,I10,Essential Hypertension,83036,A1C Test,27.71,2025-07-19 10:23:00,1,00310-0800-39,Metformin 500mg,0.133,0,CLEAN,,2025-07,Saturday,Low
+CLM_000237,MEM_00483,PROV_0020,Cardiology,TX,Austin,E78.5,Hyperlipidemia,82947,Glucose Test,44.76,2025-03-09 19:35:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-03,Sunday,High
+CLM_000238,MEM_00053,PROV_0002,Endocrinology,NY,New York City,E10.9,Type 1 Diabetes,82947,Glucose Test,20.1,2025-07-17 19:49:00,1,00555-0915-02,Gabapentin 300mg,0.204,0,CLEAN,,2025-07,Thursday,Low
+CLM_000239,MEM_00287,PROV_0016,Orthopedics,PA,Philadelphia,Z00.00,General Health Exam,97112,Neuromuscular Re-education,50.94,2025-07-14 12:19:00,1,,N/A,0.239,0,CLEAN,,2025-07,Monday,Low
+CLM_000240,MEM_00033,PROV_0011,Emergency Medicine,TX,Dallas,F41.9,Anxiety Disorder,81001,Urinalysis,6.0,2025-09-05 02:23:00,1,,N/A,0.14,0,CLEAN,,2025-09,Friday,Low
+CLM_000241,MEM_00370,PROV_0041,Primary Care,IL,Unknown,E78.5,Hyperlipidemia,70450,CT Head without Contrast,362.46,2025-02-24 08:25:00,1,68382-0087-06,Hydrocodone,0.076,0,CLEAN,,2025-02,Monday,Low
+CLM_000242,MEM_00195,PROV_0022,Emergency Medicine,PA,Philadelphia,E78.5,Hyperlipidemia,82947,Glucose Test,22.41,2025-11-30 19:08:00,1,,N/A,0.096,0,CLEAN,,2025-11,Sunday,Low
+CLM_000243,MEM_00486,PROV_0045,Pain Management,GA,Unknown,M54.5,Low Back Pain,97110,Therapeutic Exercise 15min,55.29,2025-07-23 12:47:00,1,,N/A,0.184,0,CLEAN,,2025-07,Wednesday,Low
+CLM_000244,MEM_00496,PROV_0037,Primary Care,FL,Tampa,M54.5,Low Back Pain,82947,Glucose Test,-10.68,2025-07-21 17:12:00,1,,N/A,0.073,0,CLEAN,,2025-07,Monday,Low
+CLM_000245,MEM_00014,PROV_0047,Pain Management,NC,Unknown,E78.5,Hyperlipidemia,20610,Joint Injection,145.55,2025-05-30 09:52:00,1,,N/A,0.184,0,CLEAN,,2025-05,Friday,Low
+CLM_000246,MEM_00156,PROV_0016,Orthopedics,PA,Philadelphia,J06.9,Upper Respiratory Infection,72148,MRI Lumbar Spine,631.02,2025-08-05 09:28:00,1,,N/A,0.154,0,CLEAN,,2025-08,Tuesday,Low
+CLM_000247,MEM_00260,PROV_0045,Pain Management,GA,Unknown,F41.9,Anxiety Disorder,97112,Neuromuscular Re-education,52.31,2025-07-04 16:38:00,1,,N/A,0.22,0,CLEAN,,2025-07,Friday,Low
+CLM_000248,MEM_00056,PROV_0050,Orthopedics,CA,San Diego,M54.5,Low Back Pain,72148,MRI Lumbar Spine,641.21,2025-11-28 17:41:00,1,00310-0800-39,Metformin 500mg,0.225,0,CLEAN,,2025-11,Friday,Low
+CLM_000249,MEM_00170,PROV_0028,Physical Therapy,NC,Unknown,E10.9,Type 1 Diabetes,99213,Office Visit Level 3,110.11,2025-04-24 16:35:00,1,,N/A,0.131,0,CLEAN,,2025-04,Thursday,Low
+CLM_000250,MEM_00114,PROV_0029,Emergency Medicine,MI,Unknown,E66.01,Morbid Obesity,83036,A1C Test,42.91,2025-12-14 18:44:00,1,,N/A,0.92,1,DUPLICATE_CLAIM,Duplicate claim for same service on same date,2025-12,Sunday,Critical
+CLM_000251,MEM_00013,PROV_0031,Cardiology,CA,Los Angeles,E10.9,Type 1 Diabetes,81001,Urinalysis,42.37,2025-02-13 10:22:00,1,,N/A,0.093,0,CLEAN,,2025-02,Thursday,Low
+CLM_000252,MEM_00402,PROV_0014,Orthopedics,PA,Pittsburgh,M79.3,Fibromyalgia,97110,Therapeutic Exercise 15min,66.17,2025-02-19 15:20:00,1,,N/A,0.128,0,CLEAN,,2025-02,Wednesday,Low
+CLM_000253,MEM_00415,PROV_0046,Orthopedics,MI,Unknown,E10.9,Type 1 Diabetes,99213,Office Visit Level 3,39.83,2025-12-13 11:33:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-12,Saturday,High
+CLM_000254,MEM_00170,PROV_0036,Pain Management,IL,Unknown,F41.9,Anxiety Disorder,97110,Therapeutic Exercise 15min,39.61,2025-07-27 10:40:00,1,,N/A,0.153,0,CLEAN,,2025-07,Sunday,Low
+CLM_000255,MEM_00015,PROV_0048,Psychiatry,IL,Unknown,Z00.00,General Health Exam,99285,ER Visit Level 5,464.35,2025-08-08 11:13:00,1,,N/A,0.207,0,CLEAN,,2025-08,Friday,Low
+CLM_000256,MEM_00415,PROV_0005,Orthopedics,NC,Unknown,Z00.00,General Health Exam,99214,Office Visit Level 4,142.57,2025-07-07 15:07:00,1,00310-0800-39,Metformin 500mg,0.222,0,CLEAN,,2025-07,Monday,Low
+CLM_000257,MEM_00251,PROV_0034,Primary Care,GA,Unknown,G89.29,Chronic Pain,82947,Glucose Test,-7.6,2025-10-28 13:54:00,1,59762-5005-01,Xanax 0.5mg,0.24,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000258,MEM_00417,PROV_0044,Cardiology,GA,Unknown,M25.511,Knee Pain,81001,Urinalysis,-19.07,2025-12-11 09:15:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-12,Thursday,High
+CLM_000259,MEM_00192,PROV_0045,Pain Management,GA,Unknown,I10,Essential Hypertension,97112,Neuromuscular Re-education,48.89,2025-11-02 14:27:00,1,,N/A,0.246,0,CLEAN,,2025-11,Sunday,Low
+CLM_000260,MEM_00276,PROV_0045,Pain Management,GA,Unknown,G89.29,Chronic Pain,99215,Office Visit Level 5,138.65,2025-05-28 13:53:00,1,68382-0087-06,Hydrocodone,0.177,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000261,MEM_00444,PROV_0023,Primary Care,CA,Los Angeles,E11.9,Type 2 Diabetes,97110,Therapeutic Exercise 15min,43.22,2025-07-16 16:41:00,1,,N/A,0.098,0,CLEAN,,2025-07,Wednesday,Low
+CLM_000262,MEM_00252,PROV_0027,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,52.33,2025-02-12 11:18:00,1,,N/A,0.086,0,CLEAN,,2025-02,Wednesday,Low
+CLM_000263,MEM_00235,PROV_0037,Primary Care,FL,Tampa,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,26.2,2025-10-21 16:52:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-10,Tuesday,High
+CLM_000264,MEM_00226,PROV_0035,Pain Management,TX,Austin,M54.5,Low Back Pain,83036,A1C Test,28.75,2025-12-01 12:55:00,1,,N/A,0.184,0,CLEAN,,2025-12,Monday,Low
+CLM_000265,MEM_00179,PROV_0006,Orthopedics,NC,Unknown,E78.5,Hyperlipidemia,99214,Office Visit Level 4,129.1,2025-04-18 17:44:00,1,00378-6074-77,Lisinopril 10mg,0.084,0,CLEAN,,2025-04,Friday,Low
+CLM_000266,MEM_00313,PROV_0041,Primary Care,IL,Unknown,F41.9,Anxiety Disorder,99215,Office Visit Level 5,169.39,2025-04-16 17:22:00,1,00378-6074-77,Lisinopril 10mg,0.085,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000267,MEM_00276,PROV_0011,Emergency Medicine,TX,Dallas,E66.01,Morbid Obesity,20610,Joint Injection,104.14,2025-10-21 08:54:00,1,,N/A,0.068,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000268,MEM_00348,PROV_0007,Primary Care,MI,Unknown,I10,Essential Hypertension,83036,A1C Test,27.86,2025-12-02 10:15:00,1,00093-0058-01,Atorvastatin 20mg,0.091,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000269,MEM_00347,PROV_0026,Psychiatry,GA,Unknown,E78.5,Hyperlipidemia,99215,Office Visit Level 5,159.3,2025-11-18 15:04:00,1,00093-0058-01,Atorvastatin 20mg,0.123,0,CLEAN,,2025-11,Tuesday,Low
+CLM_000270,MEM_00394,PROV_0006,Orthopedics,NC,Unknown,F41.9,Anxiety Disorder,97112,Neuromuscular Re-education,89.29,2025-08-21 13:37:00,1,00555-0915-02,Gabapentin 300mg,0.058,0,CLEAN,,2025-08,Thursday,Low
+CLM_000271,MEM_00434,PROV_0047,Pain Management,NC,Unknown,E10.9,Type 1 Diabetes,20610,Joint Injection,120.71,2025-02-02 14:13:00,1,00555-0915-02,Gabapentin 300mg,0.21,0,CLEAN,,2025-02,Sunday,Low
+CLM_000272,MEM_00146,PROV_0022,Emergency Medicine,PA,Philadelphia,M79.3,Fibromyalgia,70450,CT Head without Contrast,336.01,2025-09-06 10:57:00,1,,N/A,0.225,0,CLEAN,,2025-09,Saturday,Low
+CLM_000273,MEM_00024,PROV_0007,Primary Care,MI,Unknown,G89.29,Chronic Pain,97110,Therapeutic Exercise 15min,49.28,2025-03-22 08:27:00,0,,N/A,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-03,Saturday,Critical
+CLM_000274,MEM_00155,PROV_0011,Emergency Medicine,TX,Dallas,J06.9,Upper Respiratory Infection,99214,Office Visit Level 4,107.75,2025-02-12 11:42:00,1,00093-0058-01,Atorvastatin 20mg,0.211,0,CLEAN,,2025-02,Wednesday,Low
+CLM_000275,MEM_00203,PROV_0041,Primary Care,IL,Unknown,J06.9,Upper Respiratory Infection,20610,Joint Injection,115.58,2025-08-08 09:00:00,1,00378-6074-77,Lisinopril 10mg,0.2,0,CLEAN,,2025-08,Friday,Low
+CLM_000276,MEM_00068,PROV_0038,Endocrinology,PA,Philadelphia,M54.5,Low Back Pain,97112,Neuromuscular Re-education,39.39,2025-01-05 09:55:00,1,00002-8215-01,Humalog (Insulin),0.124,0,CLEAN,,2025-01,Sunday,Low
+CLM_000277,MEM_00245,PROV_0005,Orthopedics,NC,Unknown,M54.5,Low Back Pain,83036,A1C Test,18.48,2025-02-22 13:56:00,1,,N/A,0.147,0,CLEAN,,2025-02,Saturday,Low
+CLM_000278,MEM_00397,PROV_0049,Endocrinology,NY,New York City,I10,Essential Hypertension,72148,MRI Lumbar Spine,569.7,2025-02-05 08:39:00,1,00310-0800-39,Metformin 500mg,0.143,0,CLEAN,,2025-02,Wednesday,Low
+CLM_000279,MEM_00110,PROV_0041,Primary Care,IL,Unknown,M25.511,Knee Pain,99215,Office Visit Level 5,207.34,2025-04-22 07:48:00,1,68382-0087-06,Hydrocodone,0.199,0,CLEAN,,2025-04,Tuesday,Low
+CLM_000280,MEM_00197,PROV_0023,Primary Care,CA,Los Angeles,F41.9,Anxiety Disorder,82947,Glucose Test,31.53,2025-05-22 11:35:00,1,00378-6074-77,Lisinopril 10mg,0.152,0,CLEAN,,2025-05,Thursday,Low
+CLM_000281,MEM_00312,PROV_0019,Pain Management,NY,Rochester,M25.511,Knee Pain,99213,Office Visit Level 3,81.23,2025-04-16 16:12:00,1,00093-0058-01,Atorvastatin 20mg,0.156,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000282,MEM_00331,PROV_0004,Orthopedics,CA,Los Angeles,M54.5,Low Back Pain,97110,Therapeutic Exercise 15min,42.44,2025-05-04 17:04:00,1,,N/A,0.157,0,CLEAN,,2025-05,Sunday,Low
+CLM_000283,MEM_00007,PROV_0024,Pain Management,IL,Unknown,E66.01,Morbid Obesity,99215,Office Visit Level 5,160.89,2025-10-19 16:43:00,1,,N/A,0.098,0,CLEAN,,2025-10,Sunday,Low
+CLM_000284,MEM_00489,PROV_0050,Orthopedics,CA,San Diego,E10.9,Type 1 Diabetes,99213,Office Visit Level 3,59.87,2025-05-15 08:50:00,1,00002-8215-01,Humalog (Insulin),0.054,0,CLEAN,,2025-05,Thursday,Low
+CLM_000285,MEM_00322,PROV_0046,Orthopedics,MI,Unknown,M79.3,Fibromyalgia,83036,A1C Test,1.55,2025-07-25 19:39:00,1,,N/A,0.114,0,CLEAN,,2025-07,Friday,Low
+CLM_000286,MEM_00159,PROV_0006,Orthopedics,NC,Unknown,M79.3,Fibromyalgia,99285,ER Visit Level 5,437.07,2025-10-02 17:40:00,1,00310-0800-39,Metformin 500mg,0.074,0,CLEAN,,2025-10,Thursday,Low
+CLM_000287,MEM_00349,PROV_0042,Orthopedics,IL,Unknown,E10.9,Type 1 Diabetes,81001,Urinalysis,-6.63,2025-01-30 14:07:00,1,00378-6074-77,Lisinopril 10mg,0.228,0,CLEAN,,2025-01,Thursday,Low
+CLM_000288,MEM_00029,PROV_0020,Cardiology,TX,Austin,G89.29,Chronic Pain,20610,Joint Injection,153.74,2025-03-03 07:00:00,1,00310-0800-39,Metformin 500mg,0.208,0,CLEAN,,2025-03,Monday,Low
+CLM_000289,MEM_00178,PROV_0034,Primary Care,GA,Unknown,M79.3,Fibromyalgia,20610,Joint Injection,137.63,2025-07-10 12:46:00,1,,N/A,0.15,0,CLEAN,,2025-07,Thursday,Low
+CLM_000290,MEM_00016,PROV_0022,Emergency Medicine,PA,Philadelphia,F41.9,Anxiety Disorder,81001,Urinalysis,16.55,2025-12-31 18:40:00,1,00093-0058-01,Atorvastatin 20mg,0.167,0,CLEAN,,2025-12,Wednesday,Low
+CLM_000291,MEM_00262,PROV_0024,Pain Management,IL,Unknown,E11.9,Type 2 Diabetes,97110,Therapeutic Exercise 15min,27.77,2025-07-08 09:57:00,1,00310-0800-39,Metformin 500mg,0.199,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000292,MEM_00060,PROV_0015,Orthopedics,TX,Houston,M25.511,Knee Pain,97112,Neuromuscular Re-education,29.26,2025-01-07 15:23:00,1,,N/A,0.107,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000293,MEM_00092,PROV_0003,Physical Therapy,NC,Unknown,M79.3,Fibromyalgia,20610,Joint Injection,116.19,2025-04-25 14:58:00,1,59762-5005-01,Xanax 0.5mg,0.123,0,CLEAN,,2025-04,Friday,Low
+CLM_000294,MEM_00423,PROV_0005,Orthopedics,NC,Unknown,Z00.00,General Health Exam,82947,Glucose Test,38.52,2025-12-11 10:14:00,1,,N/A,0.121,0,CLEAN,,2025-12,Thursday,Low
+CLM_000295,MEM_00489,PROV_0026,Psychiatry,GA,Unknown,E10.9,Type 1 Diabetes,97110,Therapeutic Exercise 15min,83.19,2025-06-17 19:23:00,1,00093-0058-01,Atorvastatin 20mg,0.247,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000296,MEM_00402,PROV_0020,Cardiology,TX,Austin,M25.511,Knee Pain,70450,CT Head without Contrast,322.03,2025-07-08 15:49:00,1,,N/A,0.07,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000297,MEM_00462,PROV_0035,Pain Management,TX,Austin,M54.5,Low Back Pain,99215,Office Visit Level 5,191.26,2025-07-29 19:40:00,1,,N/A,0.081,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000298,MEM_00487,PROV_0022,Emergency Medicine,PA,Philadelphia,E11.9,Type 2 Diabetes,72148,MRI Lumbar Spine,821.78,2025-06-07 03:13:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-06,Saturday,High
+CLM_000299,MEM_00493,PROV_0004,Orthopedics,CA,Los Angeles,I10,Essential Hypertension,20610,Joint Injection,110.26,2025-01-23 16:26:00,1,,N/A,0.107,0,CLEAN,,2025-01,Thursday,Low
+CLM_000300,MEM_00235,PROV_0048,Psychiatry,IL,Unknown,E10.9,Type 1 Diabetes,70450,CT Head without Contrast,350.97,2025-03-10 14:04:00,1,,N/A,0.132,0,CLEAN,,2025-03,Monday,Low
+CLM_000301,MEM_00223,PROV_0043,Endocrinology,NY,Rochester,I10,Essential Hypertension,99285,ER Visit Level 5,433.38,2025-06-11 14:44:00,1,,N/A,0.246,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000302,MEM_00232,PROV_0018,Emergency Medicine,IL,Unknown,M54.5,Low Back Pain,99214,Office Visit Level 4,105.22,2025-10-27 03:09:00,1,00310-0800-39,Metformin 500mg,0.244,0,CLEAN,,2025-10,Monday,Low
+CLM_000303,MEM_00239,PROV_0021,Psychiatry,NY,New York City,F41.9,Anxiety Disorder,99214,Office Visit Level 4,91.85,2025-08-20 12:54:00,1,00378-6074-77,Lisinopril 10mg,0.223,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000304,MEM_00414,PROV_0044,Cardiology,GA,Unknown,J06.9,Upper Respiratory Infection,20610,Joint Injection,108.46,2025-04-21 13:09:00,1,00002-8215-01,Humalog (Insulin),0.084,0,CLEAN,,2025-04,Monday,Low
+CLM_000305,MEM_00496,PROV_0023,Primary Care,CA,Los Angeles,F41.9,Anxiety Disorder,97112,Neuromuscular Re-education,65.11,2025-06-03 10:01:00,1,,N/A,0.184,0,CLEAN,,2025-06,Tuesday,Low
+CLM_000306,MEM_00285,PROV_0048,Psychiatry,IL,Unknown,M79.3,Fibromyalgia,99285,ER Visit Level 5,451.99,2025-02-22 10:07:00,1,,N/A,0.164,0,CLEAN,,2025-02,Saturday,Low
+CLM_000307,MEM_00400,PROV_0015,Orthopedics,TX,Houston,I10,Essential Hypertension,99285,ER Visit Level 5,465.03,2025-12-18 18:05:00,1,00555-0915-02,Gabapentin 300mg,0.106,0,CLEAN,,2025-12,Thursday,Low
+CLM_000308,MEM_00470,PROV_0005,Orthopedics,NC,Unknown,E11.9,Type 2 Diabetes,99214,Office Visit Level 4,96.75,2025-11-27 10:05:00,1,,N/A,0.115,0,CLEAN,,2025-11,Thursday,Low
+CLM_000309,MEM_00483,PROV_0030,Psychiatry,FL,Orlando,E11.9,Type 2 Diabetes,99215,Office Visit Level 5,191.41,2025-07-22 14:43:00,1,59762-5005-01,Xanax 0.5mg,0.135,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000310,MEM_00110,PROV_0012,Psychiatry,PA,Philadelphia,J06.9,Upper Respiratory Infection,81001,Urinalysis,-17.55,2025-03-18 20:15:00,1,,N/A,0.073,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000311,MEM_00211,PROV_0036,Pain Management,IL,Unknown,E78.5,Hyperlipidemia,99213,Office Visit Level 3,75.96,2025-07-16 11:41:00,1,,N/A,0.172,0,CLEAN,,2025-07,Wednesday,Low
+CLM_000312,MEM_00411,PROV_0035,Pain Management,TX,Austin,E11.9,Type 2 Diabetes,83036,A1C Test,42.77,2025-09-03 15:22:00,1,00555-0915-02,Gabapentin 300mg,0.081,0,CLEAN,,2025-09,Wednesday,Low
+CLM_000313,MEM_00199,PROV_0018,Emergency Medicine,IL,Unknown,I10,Essential Hypertension,99213,Office Visit Level 3,41.77,2025-04-23 00:57:00,1,,N/A,0.146,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000314,MEM_00415,PROV_0031,Cardiology,CA,Los Angeles,M79.3,Fibromyalgia,82947,Glucose Test,6.96,2025-03-23 18:15:00,1,00378-6074-77,Lisinopril 10mg,0.117,0,CLEAN,,2025-03,Sunday,Low
+CLM_000315,MEM_00406,PROV_0048,Psychiatry,IL,Unknown,E11.9,Type 2 Diabetes,99285,ER Visit Level 5,450.95,2025-07-01 10:11:00,1,59762-5005-01,Xanax 0.5mg,0.077,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000316,MEM_00413,PROV_0048,Psychiatry,IL,Unknown,M25.511,Knee Pain,82947,Glucose Test,40.13,2025-12-27 17:36:00,1,00002-8215-01,Humalog (Insulin),0.101,0,CLEAN,,2025-12,Saturday,Low
+CLM_000317,MEM_00097,PROV_0032,Physical Therapy,FL,Orlando,M79.3,Fibromyalgia,81001,Urinalysis,6.23,2025-01-20 19:14:00,1,,N/A,0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-01,Monday,High
+CLM_000318,MEM_00470,PROV_0040,Primary Care,FL,Orlando,M54.5,Low Back Pain,99215,Office Visit Level 5,190.6,2025-04-01 13:03:00,1,,N/A,0.144,0,CLEAN,,2025-04,Tuesday,Low
+CLM_000319,MEM_00361,PROV_0010,Endocrinology,IL,Unknown,E10.9,Type 1 Diabetes,97112,Neuromuscular Re-education,78.83,2025-07-11 18:25:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-07,Friday,High
+CLM_000320,MEM_00155,PROV_0021,Psychiatry,NY,New York City,I10,Essential Hypertension,99215,Office Visit Level 5,191.54,2025-11-24 18:20:00,1,59762-5005-01,Xanax 0.5mg,0.216,0,CLEAN,,2025-11,Monday,Low
+CLM_000321,MEM_00288,PROV_0045,Pain Management,GA,Unknown,Z00.00,General Health Exam,82947,Glucose Test,15.94,2025-10-29 14:19:00,1,,N/A,0.243,0,CLEAN,,2025-10,Wednesday,Low
+CLM_000322,MEM_00066,PROV_0012,Psychiatry,PA,Philadelphia,M25.511,Knee Pain,99213,Office Visit Level 3,82.42,2025-10-18 20:58:00,1,59762-5005-01,Xanax 0.5mg,0.238,0,CLEAN,,2025-10,Saturday,Low
+CLM_000323,MEM_00290,PROV_0007,Primary Care,MI,Unknown,E78.5,Hyperlipidemia,99215,Office Visit Level 5,167.92,2025-02-09 13:10:00,1,,N/A,0.086,0,CLEAN,,2025-02,Sunday,Low
+CLM_000324,MEM_00328,PROV_0047,Pain Management,NC,Unknown,E66.01,Morbid Obesity,97110,Therapeutic Exercise 15min,46.73,2025-04-18 09:22:00,1,,N/A,0.165,0,CLEAN,,2025-04,Friday,Low
+CLM_000325,MEM_00225,PROV_0047,Pain Management,NC,Unknown,F41.9,Anxiety Disorder,99215,Office Visit Level 5,176.89,2025-07-13 14:06:00,1,68382-0087-06,Hydrocodone,0.218,0,CLEAN,,2025-07,Sunday,Low
+CLM_000326,MEM_00116,PROV_0011,Emergency Medicine,TX,Dallas,E78.5,Hyperlipidemia,99214,Office Visit Level 4,116.75,2025-05-31 00:20:00,1,00002-8215-01,Humalog (Insulin),0.09,0,CLEAN,,2025-05,Saturday,Low
+CLM_000327,MEM_00038,PROV_0022,Emergency Medicine,PA,Philadelphia,I10,Essential Hypertension,83036,A1C Test,21.76,2025-02-08 17:57:00,1,,N/A,0.083,0,CLEAN,,2025-02,Saturday,Low
+CLM_000328,MEM_00315,PROV_0031,Cardiology,CA,Los Angeles,M25.511,Knee Pain,99213,Office Visit Level 3,82.89,2025-12-01 14:10:00,1,,N/A,0.183,0,CLEAN,,2025-12,Monday,Low
+CLM_000329,MEM_00106,PROV_0013,Endocrinology,TX,Dallas,F41.9,Anxiety Disorder,20610,Joint Injection,111.58,2025-12-05 11:06:00,1,00093-0058-01,Atorvastatin 20mg,0.155,0,CLEAN,,2025-12,Friday,Low
+CLM_000330,MEM_00282,PROV_0032,Physical Therapy,FL,Orlando,I10,Essential Hypertension,99213,Office Visit Level 3,92.42,2025-08-07 21:40:00,1,,N/A,0.128,0,CLEAN,,2025-08,Thursday,Low
+CLM_000331,MEM_00106,PROV_0011,Emergency Medicine,TX,Dallas,G89.29,Chronic Pain,81001,Urinalysis,8.48,2025-03-01 09:50:00,1,68382-0087-06,Hydrocodone,0.213,0,CLEAN,,2025-03,Saturday,Low
+CLM_000332,MEM_00459,PROV_0043,Endocrinology,NY,Rochester,J06.9,Upper Respiratory Infection,99214,Office Visit Level 4,69.24,2025-04-05 14:23:00,1,59762-5005-01,Xanax 0.5mg,0.143,0,CLEAN,,2025-04,Saturday,Low
+CLM_000333,MEM_00135,PROV_0029,Emergency Medicine,MI,Unknown,E78.5,Hyperlipidemia,81001,Urinalysis,-5.16,2025-05-18 18:03:00,1,,N/A,0.11,0,CLEAN,,2025-05,Sunday,Low
+CLM_000334,MEM_00342,PROV_0007,Primary Care,MI,Unknown,E10.9,Type 1 Diabetes,72148,MRI Lumbar Spine,600.37,2025-10-05 17:14:00,1,,N/A,0.88,1,KICKBACK_PATTERN,Unusual referral pattern suggesting kickback arrangement,2025-10,Sunday,Critical
+CLM_000335,MEM_00352,PROV_0031,Cardiology,CA,Los Angeles,Z00.00,General Health Exam,99285,ER Visit Level 5,483.53,2025-02-10 08:32:00,1,,N/A,0.23,0,CLEAN,,2025-02,Monday,Low
+CLM_000336,MEM_00410,PROV_0037,Primary Care,FL,Tampa,G89.29,Chronic Pain,70450,CT Head without Contrast,366.59,2025-08-18 10:13:00,1,,N/A,0.231,0,CLEAN,,2025-08,Monday,Low
+CLM_000337,MEM_00223,PROV_0013,Endocrinology,TX,Dallas,G89.29,Chronic Pain,99215,Office Visit Level 5,135.78,2025-06-13 09:05:00,1,00093-0058-01,Atorvastatin 20mg,0.175,0,CLEAN,,2025-06,Friday,Low
+CLM_000338,MEM_00283,PROV_0021,Psychiatry,NY,New York City,J06.9,Upper Respiratory Infection,97112,Neuromuscular Re-education,20.43,2025-01-07 17:37:00,1,,N/A,0.078,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000339,MEM_00058,PROV_0027,Orthopedics,PA,Philadelphia,I10,Essential Hypertension,99215,Office Visit Level 5,202.88,2025-02-24 09:50:00,0,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-02,Monday,High
+CLM_000340,MEM_00136,PROV_0025,Emergency Medicine,NY,Rochester,G89.29,Chronic Pain,97110,Therapeutic Exercise 15min,57.66,2025-01-20 05:17:00,1,68382-0087-06,Hydrocodone,0.229,0,CLEAN,,2025-01,Monday,Low
+CLM_000341,MEM_00312,PROV_0044,Cardiology,GA,Unknown,M25.511,Knee Pain,83036,A1C Test,75.41,2025-06-19 08:47:00,1,,N/A,0.208,0,CLEAN,,2025-06,Thursday,Low
+CLM_000342,MEM_00460,PROV_0024,Pain Management,IL,Unknown,E11.9,Type 2 Diabetes,82947,Glucose Test,10.81,2025-06-09 15:54:00,1,00093-0058-01,Atorvastatin 20mg,0.1,0,CLEAN,,2025-06,Monday,Low
+CLM_000343,MEM_00498,PROV_0015,Orthopedics,TX,Houston,I10,Essential Hypertension,81001,Urinalysis,-2.0,2025-06-14 14:38:00,1,68382-0087-06,Hydrocodone,0.199,0,CLEAN,,2025-06,Saturday,Low
+CLM_000344,MEM_00227,PROV_0014,Orthopedics,PA,Pittsburgh,F41.9,Anxiety Disorder,20610,Joint Injection,121.43,2025-09-22 08:32:00,1,,N/A,0.202,0,CLEAN,,2025-09,Monday,Low
+CLM_000345,MEM_00160,PROV_0046,Orthopedics,MI,Unknown,M79.3,Fibromyalgia,83036,A1C Test,20.45,2025-09-26 08:11:00,1,,N/A,0.225,0,CLEAN,,2025-09,Friday,Low
+CLM_000346,MEM_00103,PROV_0004,Orthopedics,CA,Los Angeles,M54.5,Low Back Pain,99213,Office Visit Level 3,95.75,2025-07-04 12:23:00,1,,N/A,0.072,0,CLEAN,,2025-07,Friday,Low
+CLM_000347,MEM_00326,PROV_0008,Physical Therapy,FL,Orlando,G89.29,Chronic Pain,99213,Office Visit Level 3,64.8,2025-09-08 10:55:00,1,,N/A,0.219,0,CLEAN,,2025-09,Monday,Low
+CLM_000348,MEM_00180,PROV_0023,Primary Care,CA,Los Angeles,I10,Essential Hypertension,81001,Urinalysis,9.6,2025-05-26 07:54:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-05,Monday,High
+CLM_000349,MEM_00110,PROV_0015,Orthopedics,TX,Houston,G89.29,Chronic Pain,99285,ER Visit Level 5,430.42,2025-11-30 08:55:00,1,00093-0058-01,Atorvastatin 20mg,0.08,0,CLEAN,,2025-11,Sunday,Low
+CLM_000350,MEM_00350,PROV_0001,Pain Management,TX,Houston,E78.5,Hyperlipidemia,99215,Office Visit Level 5,195.14,2025-04-25 12:45:00,1,00002-8215-01,Humalog (Insulin),0.194,0,CLEAN,,2025-04,Friday,Low
+CLM_000351,MEM_00217,PROV_0025,Emergency Medicine,NY,Rochester,E66.01,Morbid Obesity,97110,Therapeutic Exercise 15min,26.56,2025-08-27 09:43:00,1,,N/A,0.178,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000352,MEM_00204,PROV_0038,Endocrinology,PA,Philadelphia,E10.9,Type 1 Diabetes,99213,Office Visit Level 3,83.27,2025-10-15 17:18:00,1,00555-0915-02,Gabapentin 300mg,0.1,0,CLEAN,,2025-10,Wednesday,Low
+CLM_000353,MEM_00247,PROV_0005,Orthopedics,NC,Unknown,E66.01,Morbid Obesity,81001,Urinalysis,52.54,2025-05-14 18:19:00,1,00093-0058-01,Atorvastatin 20mg,0.119,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000354,MEM_00392,PROV_0016,Orthopedics,PA,Philadelphia,E11.9,Type 2 Diabetes,70450,CT Head without Contrast,314.43,2025-06-13 08:41:00,1,,N/A,0.142,0,CLEAN,,2025-06,Friday,Low
+CLM_000355,MEM_00133,PROV_0027,Orthopedics,PA,Philadelphia,F41.9,Anxiety Disorder,83036,A1C Test,59.92,2025-06-25 11:43:00,1,00378-6074-77,Lisinopril 10mg,0.239,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000356,MEM_00184,PROV_0033,Physical Therapy,TX,Dallas,J06.9,Upper Respiratory Infection,99215,Office Visit Level 5,185.6,2025-05-31 07:16:00,1,00310-0800-39,Metformin 500mg,0.151,0,CLEAN,,2025-05,Saturday,Low
+CLM_000357,MEM_00391,PROV_0012,Psychiatry,PA,Philadelphia,G89.29,Chronic Pain,82947,Glucose Test,-2.51,2025-07-01 12:26:00,1,00378-6074-77,Lisinopril 10mg,0.172,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000358,MEM_00191,PROV_0017,Pain Management,TX,Dallas,Z00.00,General Health Exam,81001,Urinalysis,17.19,2025-03-02 18:37:00,1,,N/A,0.189,0,CLEAN,,2025-03,Sunday,Low
+CLM_000359,MEM_00257,PROV_0008,Physical Therapy,FL,Orlando,G89.29,Chronic Pain,83036,A1C Test,44.52,2025-01-28 10:08:00,1,59762-5005-01,Xanax 0.5mg,0.234,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000360,MEM_00292,PROV_0030,Psychiatry,FL,Orlando,I10,Essential Hypertension,82947,Glucose Test,4.19,2025-02-11 18:11:00,1,00310-0800-39,Metformin 500mg,0.165,0,CLEAN,,2025-02,Tuesday,Low
+CLM_000361,MEM_00003,PROV_0029,Emergency Medicine,MI,Unknown,J06.9,Upper Respiratory Infection,99285,ER Visit Level 5,459.43,2025-10-23 05:31:00,1,00310-0800-39,Metformin 500mg,0.171,0,CLEAN,,2025-10,Thursday,Low
+CLM_000362,MEM_00046,PROV_0009,Orthopedics,PA,Philadelphia,Z00.00,General Health Exam,83036,A1C Test,61.86,2025-08-08 14:00:00,1,59762-5005-01,Xanax 0.5mg,0.237,0,CLEAN,,2025-08,Friday,Low
+CLM_000363,MEM_00375,PROV_0024,Pain Management,IL,Unknown,E11.9,Type 2 Diabetes,82947,Glucose Test,9.78,2025-01-10 18:46:00,1,00378-6074-77,Lisinopril 10mg,0.235,0,CLEAN,,2025-01,Friday,Low
+CLM_000364,MEM_00450,PROV_0023,Primary Care,CA,Los Angeles,J06.9,Upper Respiratory Infection,99215,Office Visit Level 5,160.21,2025-09-15 10:04:00,1,,N/A,0.247,0,CLEAN,,2025-09,Monday,Low
+CLM_000365,MEM_00149,PROV_0030,Psychiatry,FL,Orlando,M25.511,Knee Pain,97112,Neuromuscular Re-education,47.48,2025-08-11 10:21:00,1,00555-0915-02,Gabapentin 300mg,0.218,0,CLEAN,,2025-08,Monday,Low
+CLM_000366,MEM_00097,PROV_0011,Emergency Medicine,TX,Dallas,F41.9,Anxiety Disorder,99213,Office Visit Level 3,76.11,2025-03-09 06:46:00,1,,N/A,0.168,0,CLEAN,,2025-03,Sunday,Low
+CLM_000367,MEM_00087,PROV_0008,Physical Therapy,FL,Orlando,E66.01,Morbid Obesity,20610,Joint Injection,141.88,2025-07-12 12:49:00,1,00002-8215-01,Humalog (Insulin),0.13,0,CLEAN,,2025-07,Saturday,Low
+CLM_000368,MEM_00305,PROV_0004,Orthopedics,CA,Los Angeles,G89.29,Chronic Pain,99214,Office Visit Level 4,106.84,2025-01-25 14:28:00,1,00002-8215-01,Humalog (Insulin),0.211,0,CLEAN,,2025-01,Saturday,Low
+CLM_000369,MEM_00130,PROV_0031,Cardiology,CA,Los Angeles,M25.511,Knee Pain,99215,Office Visit Level 5,171.46,2025-12-18 12:26:00,1,,N/A,0.051,0,CLEAN,,2025-12,Thursday,Low
+CLM_000370,MEM_00267,PROV_0018,Emergency Medicine,IL,Unknown,Z00.00,General Health Exam,70450,CT Head without Contrast,329.76,2025-02-23 16:46:00,1,59762-5005-01,Xanax 0.5mg,0.72,1,UNNECESSARY_SERVICE,High-cost imaging for routine health exam,2025-02,Sunday,High
+CLM_000371,MEM_00059,PROV_0007,Primary Care,MI,Unknown,E78.5,Hyperlipidemia,99285,ER Visit Level 5,416.9,2025-09-25 13:45:00,1,00093-0058-01,Atorvastatin 20mg,0.234,0,CLEAN,,2025-09,Thursday,Low
+CLM_000372,MEM_00107,PROV_0045,Pain Management,GA,Unknown,E78.5,Hyperlipidemia,82947,Glucose Test,-5.8,2025-01-07 09:53:00,1,,N/A,0.198,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000373,MEM_00077,PROV_0006,Orthopedics,NC,Unknown,M79.3,Fibromyalgia,99214,Office Visit Level 4,84.1,2025-05-12 15:18:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-05,Monday,High
+CLM_000374,MEM_00052,PROV_0012,Psychiatry,PA,Philadelphia,E11.9,Type 2 Diabetes,81001,Urinalysis,9.81,2025-12-13 09:06:00,1,,N/A,0.078,0,CLEAN,,2025-12,Saturday,Low
+CLM_000375,MEM_00005,PROV_0009,Orthopedics,PA,Philadelphia,G89.29,Chronic Pain,72148,MRI Lumbar Spine,569.94,2025-07-03 17:17:00,1,,N/A,0.085,0,CLEAN,,2025-07,Thursday,Low
+CLM_000376,MEM_00094,PROV_0008,Physical Therapy,FL,Orlando,F41.9,Anxiety Disorder,83036,A1C Test,-23.94,2025-07-17 15:51:00,1,00093-0058-01,Atorvastatin 20mg,0.233,0,CLEAN,,2025-07,Thursday,Low
+CLM_000377,MEM_00409,PROV_0011,Emergency Medicine,TX,Dallas,E10.9,Type 1 Diabetes,99215,Office Visit Level 5,178.91,2025-03-23 03:26:00,1,00002-8215-01,Humalog (Insulin),0.122,0,CLEAN,,2025-03,Sunday,Low
+CLM_000378,MEM_00292,PROV_0044,Cardiology,GA,Unknown,E78.5,Hyperlipidemia,99215,Office Visit Level 5,216.98,2025-11-10 20:53:00,1,00555-0915-02,Gabapentin 300mg,0.053,0,CLEAN,,2025-11,Monday,Low
+CLM_000379,MEM_00067,PROV_0031,Cardiology,CA,Los Angeles,E78.5,Hyperlipidemia,99214,Office Visit Level 4,132.53,2025-01-24 20:00:00,1,68382-0087-06,Hydrocodone,0.183,0,CLEAN,,2025-01,Friday,Low
+CLM_000380,MEM_00269,PROV_0050,Orthopedics,CA,San Diego,M25.511,Knee Pain,70450,CT Head without Contrast,344.62,2025-12-09 16:33:00,1,00378-6074-77,Lisinopril 10mg,0.067,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000381,MEM_00049,PROV_0028,Physical Therapy,NC,Unknown,G89.29,Chronic Pain,20610,Joint Injection,97.87,2025-06-27 18:24:00,1,,N/A,0.249,0,CLEAN,,2025-06,Friday,Low
+CLM_000382,MEM_00286,PROV_0040,Primary Care,FL,Orlando,E11.9,Type 2 Diabetes,99213,Office Visit Level 3,126.47,2025-09-16 15:55:00,1,00310-0800-39,Metformin 500mg,0.063,0,CLEAN,,2025-09,Tuesday,Low
+CLM_000383,MEM_00252,PROV_0021,Psychiatry,NY,New York City,M54.5,Low Back Pain,82947,Glucose Test,21.18,2025-09-17 18:24:00,1,00002-8215-01,Humalog (Insulin),0.2,0,CLEAN,,2025-09,Wednesday,Low
+CLM_000384,MEM_00041,PROV_0030,Psychiatry,FL,Orlando,E78.5,Hyperlipidemia,70450,CT Head without Contrast,353.96,2025-09-13 09:31:00,1,,N/A,0.091,0,CLEAN,,2025-09,Saturday,Low
+CLM_000385,MEM_00053,PROV_0026,Psychiatry,GA,Unknown,F41.9,Anxiety Disorder,99213,Office Visit Level 3,72.11,2025-02-16 17:40:00,1,00002-8215-01,Humalog (Insulin),0.088,0,CLEAN,,2025-02,Sunday,Low
+CLM_000386,MEM_00288,PROV_0014,Orthopedics,PA,Pittsburgh,G89.29,Chronic Pain,72148,MRI Lumbar Spine,839.08,2025-06-24 08:52:00,1,,N/A,0.78,1,UNBUNDLING,MRI procedure split into multiple billable components,2025-06,Tuesday,High
+CLM_000387,MEM_00393,PROV_0040,Primary Care,FL,Orlando,Z00.00,General Health Exam,97110,Therapeutic Exercise 15min,34.13,2025-08-20 18:14:00,1,00555-0915-02,Gabapentin 300mg,0.063,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000388,MEM_00425,PROV_0041,Primary Care,IL,Unknown,J06.9,Upper Respiratory Infection,97112,Neuromuscular Re-education,44.9,2025-01-24 15:08:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-01,Friday,High
+CLM_000389,MEM_00210,PROV_0007,Primary Care,MI,Unknown,J06.9,Upper Respiratory Infection,70450,CT Head without Contrast,380.08,2025-03-03 14:13:00,1,,N/A,0.138,0,CLEAN,,2025-03,Monday,Low
+CLM_000390,MEM_00388,PROV_0027,Orthopedics,PA,Philadelphia,E11.9,Type 2 Diabetes,72148,MRI Lumbar Spine,624.92,2025-08-19 17:32:00,1,00169-7501-11,Ozempic (GLP-1),0.081,0,CLEAN,,2025-08,Tuesday,Low
+CLM_000391,MEM_00222,PROV_0038,Endocrinology,PA,Philadelphia,E78.5,Hyperlipidemia,97112,Neuromuscular Re-education,8.53,2025-12-21 10:06:00,1,00310-0800-39,Metformin 500mg,0.086,0,CLEAN,,2025-12,Sunday,Low
+CLM_000392,MEM_00311,PROV_0021,Psychiatry,NY,New York City,M79.3,Fibromyalgia,83036,A1C Test,1.85,2025-11-08 11:17:00,1,,N/A,0.179,0,CLEAN,,2025-11,Saturday,Low
+CLM_000393,MEM_00497,PROV_0019,Pain Management,NY,Rochester,E78.5,Hyperlipidemia,99215,Office Visit Level 5,164.44,2025-11-05 16:19:00,1,,N/A,0.132,0,CLEAN,,2025-11,Wednesday,Low
+CLM_000394,MEM_00161,PROV_0046,Orthopedics,MI,Unknown,M25.511,Knee Pain,97112,Neuromuscular Re-education,68.71,2025-04-18 12:43:00,1,00378-6074-77,Lisinopril 10mg,0.055,0,CLEAN,,2025-04,Friday,Low
+CLM_000395,MEM_00068,PROV_0046,Orthopedics,MI,Unknown,G89.29,Chronic Pain,99215,Office Visit Level 5,205.43,2025-12-30 13:35:00,1,00555-0915-02,Gabapentin 300mg,0.094,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000396,MEM_00483,PROV_0043,Endocrinology,NY,Rochester,M25.511,Knee Pain,83036,A1C Test,44.43,2025-08-05 16:06:00,1,00093-0058-01,Atorvastatin 20mg,0.054,0,CLEAN,,2025-08,Tuesday,Low
+CLM_000397,MEM_00028,PROV_0043,Endocrinology,NY,Rochester,E11.9,Type 2 Diabetes,99285,ER Visit Level 5,427.42,2025-03-24 18:16:00,1,,N/A,0.071,0,CLEAN,,2025-03,Monday,Low
+CLM_000398,MEM_00354,PROV_0019,Pain Management,NY,Rochester,M54.5,Low Back Pain,97112,Neuromuscular Re-education,39.51,2025-08-20 18:47:00,1,,N/A,0.181,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000399,MEM_00381,PROV_0042,Orthopedics,IL,Unknown,M79.3,Fibromyalgia,83036,A1C Test,39.79,2025-12-23 18:03:00,1,,N/A,0.098,0,CLEAN,,2025-12,Tuesday,Low
+CLM_000400,MEM_00490,PROV_0044,Cardiology,GA,Unknown,E66.01,Morbid Obesity,97112,Neuromuscular Re-education,45.19,2025-05-09 15:53:00,1,,N/A,0.194,0,CLEAN,,2025-05,Friday,Low
+CLM_000401,MEM_00361,PROV_0046,Orthopedics,MI,Unknown,G89.29,Chronic Pain,82947,Glucose Test,12.5,2025-04-10 10:43:00,1,00378-6074-77,Lisinopril 10mg,0.221,0,CLEAN,,2025-04,Thursday,Low
+CLM_000402,MEM_00089,PROV_0048,Psychiatry,IL,Unknown,M79.3,Fibromyalgia,99214,Office Visit Level 4,102.78,2025-08-08 12:08:00,1,,N/A,0.184,0,CLEAN,,2025-08,Friday,Low
+CLM_000403,MEM_00131,PROV_0001,Pain Management,TX,Houston,E66.01,Morbid Obesity,97110,Therapeutic Exercise 15min,68.19,2025-01-21 13:38:00,1,00310-0800-39,Metformin 500mg,0.091,0,CLEAN,,2025-01,Tuesday,Low
+CLM_000404,MEM_00321,PROV_0040,Primary Care,FL,Orlando,G89.29,Chronic Pain,81001,Urinalysis,26.86,2025-10-21 09:50:00,1,,N/A,0.053,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000405,MEM_00113,PROV_0012,Psychiatry,PA,Philadelphia,M79.3,Fibromyalgia,99214,Office Visit Level 4,103.81,2025-08-01 14:05:00,1,00310-0800-39,Metformin 500mg,0.067,0,CLEAN,,2025-08,Friday,Low
+CLM_000406,MEM_00110,PROV_0043,Endocrinology,NY,Rochester,E66.01,Morbid Obesity,82947,Glucose Test,26.52,2025-04-22 17:33:00,1,,N/A,0.134,0,CLEAN,,2025-04,Tuesday,Low
+CLM_000407,MEM_00422,PROV_0049,Endocrinology,NY,New York City,G89.29,Chronic Pain,99213,Office Visit Level 3,49.98,2025-06-27 18:39:00,1,,N/A,0.229,0,CLEAN,,2025-06,Friday,Low
+CLM_000408,MEM_00021,PROV_0044,Cardiology,GA,Unknown,E66.01,Morbid Obesity,83036,A1C Test,19.55,2025-07-17 12:01:00,1,00169-7501-11,Ozempic (GLP-1),0.102,0,CLEAN,,2025-07,Thursday,Low
+CLM_000409,MEM_00192,PROV_0033,Physical Therapy,TX,Dallas,M79.3,Fibromyalgia,97110,Therapeutic Exercise 15min,65.98,2025-06-01 11:20:00,1,,N/A,0.126,0,CLEAN,,2025-06,Sunday,Low
+CLM_000410,MEM_00050,PROV_0011,Emergency Medicine,TX,Dallas,M79.3,Fibromyalgia,97112,Neuromuscular Re-education,18.87,2025-02-03 06:42:00,1,,N/A,0.175,0,CLEAN,,2025-02,Monday,Low
+CLM_000411,MEM_00443,PROV_0044,Cardiology,GA,Unknown,F41.9,Anxiety Disorder,99214,Office Visit Level 4,122.12,2025-12-26 14:41:00,1,,N/A,0.132,0,CLEAN,,2025-12,Friday,Low
+CLM_000412,MEM_00079,PROV_0002,Endocrinology,NY,New York City,E78.5,Hyperlipidemia,20610,Joint Injection,78.36,2025-02-14 07:16:00,1,,N/A,0.109,0,CLEAN,,2025-02,Friday,Low
+CLM_000413,MEM_00421,PROV_0015,Orthopedics,TX,Houston,J06.9,Upper Respiratory Infection,83036,A1C Test,63.93,2025-11-19 13:01:00,1,,N/A,0.24,0,CLEAN,,2025-11,Wednesday,Low
+CLM_000414,MEM_00274,PROV_0001,Pain Management,TX,Houston,G89.29,Chronic Pain,20610,Joint Injection,109.1,2025-12-25 13:59:00,1,00002-8215-01,Humalog (Insulin),0.224,0,CLEAN,,2025-12,Thursday,Low
+CLM_000415,MEM_00403,PROV_0044,Cardiology,GA,Unknown,J06.9,Upper Respiratory Infection,70450,CT Head without Contrast,357.98,2025-08-13 18:01:00,1,,N/A,0.147,0,CLEAN,,2025-08,Wednesday,Low
+CLM_000416,MEM_00113,PROV_0009,Orthopedics,PA,Philadelphia,M25.511,Knee Pain,83036,A1C Test,32.28,2025-11-21 18:56:00,1,00093-0058-01,Atorvastatin 20mg,0.135,0,CLEAN,,2025-11,Friday,Low
+CLM_000417,MEM_00332,PROV_0024,Pain Management,IL,Unknown,E11.9,Type 2 Diabetes,97112,Neuromuscular Re-education,53.01,2025-03-05 20:25:00,1,00310-0800-39,Metformin 500mg,0.054,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000418,MEM_00044,PROV_0020,Cardiology,TX,Austin,M54.5,Low Back Pain,20610,Joint Injection,126.16,2025-04-19 18:54:00,1,00555-0915-02,Gabapentin 300mg,0.177,0,CLEAN,,2025-04,Saturday,Low
+CLM_000419,MEM_00095,PROV_0015,Orthopedics,TX,Houston,Z00.00,General Health Exam,81001,Urinalysis,-19.2,2025-04-03 17:54:00,1,,N/A,0.102,0,CLEAN,,2025-04,Thursday,Low
+CLM_000420,MEM_00478,PROV_0036,Pain Management,IL,Unknown,E78.5,Hyperlipidemia,72148,MRI Lumbar Spine,603.42,2025-12-10 07:46:00,1,00093-0058-01,Atorvastatin 20mg,0.247,0,CLEAN,,2025-12,Wednesday,Low
+CLM_000421,MEM_00066,PROV_0043,Endocrinology,NY,Rochester,G89.29,Chronic Pain,99285,ER Visit Level 5,446.32,2025-11-14 07:31:00,1,,N/A,0.155,0,CLEAN,,2025-11,Friday,Low
+CLM_000422,MEM_00338,PROV_0020,Cardiology,TX,Austin,M25.511,Knee Pain,70450,CT Head without Contrast,339.2,2025-10-18 13:27:00,1,,N/A,0.054,0,CLEAN,,2025-10,Saturday,Low
+CLM_000423,MEM_00127,PROV_0015,Orthopedics,TX,Houston,M25.511,Knee Pain,20610,Joint Injection,104.43,2025-07-04 13:56:00,1,00093-0058-01,Atorvastatin 20mg,0.233,0,CLEAN,,2025-07,Friday,Low
+CLM_000424,MEM_00184,PROV_0050,Orthopedics,CA,San Diego,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,48.92,2025-11-27 12:54:00,1,00310-0800-39,Metformin 500mg,0.105,0,CLEAN,,2025-11,Thursday,Low
+CLM_000425,MEM_00101,PROV_0017,Pain Management,TX,Dallas,M25.511,Knee Pain,72148,MRI Lumbar Spine,580.43,2025-02-08 16:40:00,1,,N/A,0.161,0,CLEAN,,2025-02,Saturday,Low
+CLM_000426,MEM_00019,PROV_0036,Pain Management,IL,Unknown,J06.9,Upper Respiratory Infection,97112,Neuromuscular Re-education,70.58,2025-12-01 13:25:00,1,68382-0087-06,Hydrocodone,0.091,0,CLEAN,,2025-12,Monday,Low
+CLM_000427,MEM_00302,PROV_0047,Pain Management,NC,Unknown,J06.9,Upper Respiratory Infection,99215,Office Visit Level 5,189.45,2025-09-19 19:00:00,0,,N/A,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-09,Friday,Critical
+CLM_000428,MEM_00351,PROV_0011,Emergency Medicine,TX,Dallas,M79.3,Fibromyalgia,99215,Office Visit Level 5,185.12,2025-04-02 18:36:00,1,,N/A,0.17,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000429,MEM_00075,PROV_0048,Psychiatry,IL,Unknown,M25.511,Knee Pain,97110,Therapeutic Exercise 15min,64.65,2025-04-23 11:04:00,1,00002-8215-01,Humalog (Insulin),0.183,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000430,MEM_00022,PROV_0043,Endocrinology,NY,Rochester,M54.5,Low Back Pain,97112,Neuromuscular Re-education,13.18,2025-07-18 15:56:00,1,00555-0915-02,Gabapentin 300mg,0.154,0,CLEAN,,2025-07,Friday,Low
+CLM_000431,MEM_00333,PROV_0021,Psychiatry,NY,New York City,E10.9,Type 1 Diabetes,20610,Joint Injection,94.41,2025-05-15 17:11:00,1,00093-0058-01,Atorvastatin 20mg,0.059,0,CLEAN,,2025-05,Thursday,Low
+CLM_000432,MEM_00188,PROV_0038,Endocrinology,PA,Philadelphia,G89.29,Chronic Pain,99214,Office Visit Level 4,120.35,2025-04-25 13:52:00,1,59762-5005-01,Xanax 0.5mg,0.067,0,CLEAN,,2025-04,Friday,Low
+CLM_000433,MEM_00247,PROV_0039,Cardiology,PA,Philadelphia,E11.9,Type 2 Diabetes,97112,Neuromuscular Re-education,35.49,2025-03-26 16:41:00,1,68382-0087-06,Hydrocodone,0.171,0,CLEAN,,2025-03,Wednesday,Low
+CLM_000434,MEM_00096,PROV_0011,Emergency Medicine,TX,Dallas,E66.01,Morbid Obesity,70450,CT Head without Contrast,337.77,2025-12-05 07:26:00,1,00169-7501-11,Ozempic (GLP-1),0.108,0,CLEAN,,2025-12,Friday,Low
+CLM_000435,MEM_00247,PROV_0044,Cardiology,GA,Unknown,E78.5,Hyperlipidemia,97110,Therapeutic Exercise 15min,16.87,2025-03-24 14:01:00,1,,N/A,0.121,0,CLEAN,,2025-03,Monday,Low
+CLM_000436,MEM_00294,PROV_0038,Endocrinology,PA,Philadelphia,I10,Essential Hypertension,99215,Office Visit Level 5,160.48,2025-10-21 10:16:00,1,00002-8215-01,Humalog (Insulin),0.163,0,CLEAN,,2025-10,Tuesday,Low
+CLM_000437,MEM_00208,PROV_0039,Cardiology,PA,Philadelphia,Z00.00,General Health Exam,72148,MRI Lumbar Spine,621.07,2025-12-05 09:13:00,1,,N/A,0.145,0,CLEAN,,2025-12,Friday,Low
+CLM_000438,MEM_00247,PROV_0011,Emergency Medicine,TX,Dallas,M54.5,Low Back Pain,83036,A1C Test,39.87,2025-11-16 21:32:00,1,00310-0800-39,Metformin 500mg,0.197,0,CLEAN,,2025-11,Sunday,Low
+CLM_000439,MEM_00352,PROV_0022,Emergency Medicine,PA,Philadelphia,E78.5,Hyperlipidemia,70450,CT Head without Contrast,353.7,2025-07-13 12:08:00,1,00378-6074-77,Lisinopril 10mg,0.093,0,CLEAN,,2025-07,Sunday,Low
+CLM_000440,MEM_00268,PROV_0033,Physical Therapy,TX,Dallas,G89.29,Chronic Pain,83036,A1C Test,18.49,2025-04-01 17:38:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-04,Tuesday,High
+CLM_000441,MEM_00273,PROV_0033,Physical Therapy,TX,Dallas,E10.9,Type 1 Diabetes,99214,Office Visit Level 4,112.44,2025-03-08 16:52:00,1,,N/A,0.169,0,CLEAN,,2025-03,Saturday,Low
+CLM_000442,MEM_00397,PROV_0044,Cardiology,GA,Unknown,G89.29,Chronic Pain,83036,A1C Test,52.99,2025-01-23 14:14:00,1,00555-0915-02,Gabapentin 300mg,0.071,0,CLEAN,,2025-01,Thursday,Low
+CLM_000443,MEM_00196,PROV_0023,Primary Care,CA,Los Angeles,Z00.00,General Health Exam,20610,Joint Injection,105.94,2025-08-06 15:49:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-08,Wednesday,High
+CLM_000444,MEM_00043,PROV_0019,Pain Management,NY,Rochester,Z00.00,General Health Exam,97112,Neuromuscular Re-education,49.3,2025-04-07 20:00:00,1,,N/A,0.188,0,CLEAN,,2025-04,Monday,Low
+CLM_000445,MEM_00267,PROV_0001,Pain Management,TX,Houston,F41.9,Anxiety Disorder,72148,MRI Lumbar Spine,635.42,2025-06-11 09:09:00,1,,N/A,0.137,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000446,MEM_00438,PROV_0035,Pain Management,TX,Austin,F41.9,Anxiety Disorder,70450,CT Head without Contrast,364.16,2025-05-22 14:48:00,1,,N/A,0.21,0,CLEAN,,2025-05,Thursday,Low
+CLM_000447,MEM_00402,PROV_0036,Pain Management,IL,Unknown,E78.5,Hyperlipidemia,99215,Office Visit Level 5,168.75,2025-10-12 12:36:00,1,,N/A,0.189,0,CLEAN,,2025-10,Sunday,Low
+CLM_000448,MEM_00204,PROV_0048,Psychiatry,IL,Unknown,I10,Essential Hypertension,72148,MRI Lumbar Spine,612.44,2025-04-28 10:06:00,1,,N/A,0.122,0,CLEAN,,2025-04,Monday,Low
+CLM_000449,MEM_00411,PROV_0036,Pain Management,IL,Unknown,Z00.00,General Health Exam,20610,Joint Injection,88.6,2025-03-24 18:00:00,1,00002-8215-01,Humalog (Insulin),0.068,0,CLEAN,,2025-03,Monday,Low
+CLM_000450,MEM_00242,PROV_0039,Cardiology,PA,Philadelphia,F41.9,Anxiety Disorder,99214,Office Visit Level 4,108.51,2025-04-24 17:02:00,1,,N/A,0.087,0,CLEAN,,2025-04,Thursday,Low
+CLM_000451,MEM_00206,PROV_0040,Primary Care,FL,Orlando,G89.29,Chronic Pain,97112,Neuromuscular Re-education,62.41,2025-11-02 20:11:00,1,,N/A,0.158,0,CLEAN,,2025-11,Sunday,Low
+CLM_000452,MEM_00006,PROV_0013,Endocrinology,TX,Dallas,G89.29,Chronic Pain,97112,Neuromuscular Re-education,57.6,2025-01-18 16:33:00,1,,N/A,0.211,0,CLEAN,,2025-01,Saturday,Low
+CLM_000453,MEM_00087,PROV_0044,Cardiology,GA,Unknown,E11.9,Type 2 Diabetes,82947,Glucose Test,32.21,2025-01-01 09:17:00,1,,N/A,0.182,0,CLEAN,,2025-01,Wednesday,Low
+CLM_000454,MEM_00343,PROV_0026,Psychiatry,GA,Unknown,F41.9,Anxiety Disorder,70450,CT Head without Contrast,366.68,2025-01-08 09:58:00,1,,N/A,0.1,0,CLEAN,,2025-01,Wednesday,Low
+CLM_000455,MEM_00372,PROV_0036,Pain Management,IL,Unknown,Z00.00,General Health Exam,82947,Glucose Test,29.18,2025-05-22 11:29:00,1,,N/A,0.148,0,CLEAN,,2025-05,Thursday,Low
+CLM_000456,MEM_00134,PROV_0012,Psychiatry,PA,Philadelphia,F41.9,Anxiety Disorder,97112,Neuromuscular Re-education,58.59,2025-02-07 13:07:00,1,,N/A,0.086,0,CLEAN,,2025-02,Friday,Low
+CLM_000457,MEM_00449,PROV_0035,Pain Management,TX,Austin,Z00.00,General Health Exam,81001,Urinalysis,19.15,2025-10-16 11:48:00,1,59762-5005-01,Xanax 0.5mg,0.164,0,CLEAN,,2025-10,Thursday,Low
+CLM_000458,MEM_00235,PROV_0044,Cardiology,GA,Unknown,E78.5,Hyperlipidemia,70450,CT Head without Contrast,328.38,2025-03-01 14:40:00,1,68382-0087-06,Hydrocodone,0.235,0,CLEAN,,2025-03,Saturday,Low
+CLM_000459,MEM_00347,PROV_0045,Pain Management,GA,Unknown,M54.5,Low Back Pain,82947,Glucose Test,41.06,2025-06-30 08:44:00,1,,N/A,0.244,0,CLEAN,,2025-06,Monday,Low
+CLM_000460,MEM_00048,PROV_0026,Psychiatry,GA,Unknown,G89.29,Chronic Pain,20610,Joint Injection,119.21,2025-10-11 15:20:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-10,Saturday,High
+CLM_000461,MEM_00294,PROV_0018,Emergency Medicine,IL,Unknown,I10,Essential Hypertension,20610,Joint Injection,133.63,2025-09-13 23:12:00,1,00378-6074-77,Lisinopril 10mg,0.219,0,CLEAN,,2025-09,Saturday,Low
+CLM_000462,MEM_00447,PROV_0017,Pain Management,TX,Dallas,M54.5,Low Back Pain,99285,ER Visit Level 5,468.77,2025-05-08 13:09:00,0,,N/A,0.95,1,PHANTOM_BILLING,Service billed but not documented or rendered,2025-05,Thursday,Critical
+CLM_000463,MEM_00340,PROV_0032,Physical Therapy,FL,Orlando,Z00.00,General Health Exam,99213,Office Visit Level 3,116.42,2025-09-04 13:31:00,1,00002-8215-01,Humalog (Insulin),0.73,1,PT_MILL,Excessive PT sessions beyond medical necessity,2025-09,Thursday,High
+CLM_000464,MEM_00392,PROV_0033,Physical Therapy,TX,Dallas,J06.9,Upper Respiratory Infection,83036,A1C Test,21.31,2025-10-23 16:51:00,1,,N/A,0.065,0,CLEAN,,2025-10,Thursday,Low
+CLM_000465,MEM_00277,PROV_0003,Physical Therapy,NC,Unknown,M79.3,Fibromyalgia,82947,Glucose Test,13.82,2025-12-18 15:07:00,1,,N/A,0.189,0,CLEAN,,2025-12,Thursday,Low
+CLM_000466,MEM_00162,PROV_0045,Pain Management,GA,Unknown,E11.9,Type 2 Diabetes,99213,Office Visit Level 3,100.12,2025-10-25 13:39:00,1,59762-5005-01,Xanax 0.5mg,0.063,0,CLEAN,,2025-10,Saturday,Low
+CLM_000467,MEM_00135,PROV_0016,Orthopedics,PA,Philadelphia,J06.9,Upper Respiratory Infection,97110,Therapeutic Exercise 15min,27.11,2025-07-07 14:13:00,1,00555-0915-02,Gabapentin 300mg,0.113,0,CLEAN,,2025-07,Monday,Low
+CLM_000468,MEM_00191,PROV_0024,Pain Management,IL,Unknown,F41.9,Anxiety Disorder,81001,Urinalysis,43.94,2025-10-20 17:43:00,1,,N/A,0.114,0,CLEAN,,2025-10,Monday,Low
+CLM_000469,MEM_00370,PROV_0018,Emergency Medicine,IL,Unknown,M54.5,Low Back Pain,97112,Neuromuscular Re-education,53.93,2025-07-15 06:09:00,1,,N/A,0.175,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000470,MEM_00413,PROV_0001,Pain Management,TX,Houston,I10,Essential Hypertension,83036,A1C Test,35.34,2025-11-19 13:50:00,1,,N/A,0.097,0,CLEAN,,2025-11,Wednesday,Low
+CLM_000471,MEM_00288,PROV_0037,Primary Care,FL,Tampa,E11.9,Type 2 Diabetes,83036,A1C Test,47.79,2025-03-25 21:30:00,1,,N/A,0.055,0,CLEAN,,2025-03,Tuesday,Low
+CLM_000472,MEM_00185,PROV_0036,Pain Management,IL,Unknown,M79.3,Fibromyalgia,81001,Urinalysis,16.65,2025-07-30 18:38:00,1,,N/A,0.238,0,CLEAN,,2025-07,Wednesday,Low
+CLM_000473,MEM_00333,PROV_0042,Orthopedics,IL,Unknown,M79.3,Fibromyalgia,99215,Office Visit Level 5,201.31,2025-07-01 16:31:00,1,00093-0058-01,Atorvastatin 20mg,0.21,0,CLEAN,,2025-07,Tuesday,Low
+CLM_000474,MEM_00456,PROV_0006,Orthopedics,NC,Unknown,F41.9,Anxiety Disorder,70450,CT Head without Contrast,339.65,2025-11-20 10:40:00,1,,N/A,0.146,0,CLEAN,,2025-11,Thursday,Low
+CLM_000475,MEM_00314,PROV_0037,Primary Care,FL,Tampa,F41.9,Anxiety Disorder,99214,Office Visit Level 4,138.19,2025-06-25 13:41:00,1,,N/A,0.176,0,CLEAN,,2025-06,Wednesday,Low
+CLM_000476,MEM_00455,PROV_0029,Emergency Medicine,MI,Unknown,E66.01,Morbid Obesity,20610,Joint Injection,111.09,2025-07-31 05:11:00,1,68382-0087-06,Hydrocodone,0.81,1,EXCESSIVE_OPIOID,Opioid refill within 15 days of last prescription,2025-07,Thursday,Critical
+CLM_000477,MEM_00121,PROV_0043,Endocrinology,NY,Rochester,J06.9,Upper Respiratory Infection,20610,Joint Injection,149.07,2025-04-18 09:06:00,1,00169-7501-11,Ozempic (GLP-1),0.79,1,OFF_LABEL_DRUG,GLP-1 prescribed without diabetes or obesity diagnosis,2025-04,Friday,High
+CLM_000478,MEM_00243,PROV_0036,Pain Management,IL,Unknown,E11.9,Type 2 Diabetes,99213,Office Visit Level 3,66.6,2025-02-23 10:05:00,1,00169-7501-11,Ozempic (GLP-1),0.121,0,CLEAN,,2025-02,Sunday,Low
+CLM_000479,MEM_00200,PROV_0020,Cardiology,TX,Austin,M54.5,Low Back Pain,99285,ER Visit Level 5,444.36,2025-11-17 16:53:00,1,68382-0087-06,Hydrocodone,0.107,0,CLEAN,,2025-11,Monday,Low
+CLM_000480,MEM_00340,PROV_0023,Primary Care,CA,Los Angeles,E66.01,Morbid Obesity,97110,Therapeutic Exercise 15min,24.92,2025-10-04 16:28:00,1,,N/A,0.058,0,CLEAN,,2025-10,Saturday,Low
+CLM_000481,MEM_00358,PROV_0035,Pain Management,TX,Austin,I10,Essential Hypertension,70450,CT Head without Contrast,334.64,2025-09-26 16:19:00,1,59762-5005-01,Xanax 0.5mg,0.054,0,CLEAN,,2025-09,Friday,Low
+CLM_000482,MEM_00117,PROV_0006,Orthopedics,NC,Unknown,E78.5,Hyperlipidemia,81001,Urinalysis,14.31,2025-05-14 08:00:00,1,,N/A,0.127,0,CLEAN,,2025-05,Wednesday,Low
+CLM_000483,MEM_00435,PROV_0009,Orthopedics,PA,Philadelphia,E66.01,Morbid Obesity,81001,Urinalysis,19.68,2025-01-05 15:48:00,1,,N/A,0.186,0,CLEAN,,2025-01,Sunday,Low
+CLM_000484,MEM_00393,PROV_0028,Physical Therapy,NC,Unknown,J06.9,Upper Respiratory Infection,70450,CT Head without Contrast,369.69,2025-01-04 11:26:00,1,,N/A,0.239,0,CLEAN,,2025-01,Saturday,Low
+CLM_000485,MEM_00128,PROV_0011,Emergency Medicine,TX,Dallas,M25.511,Knee Pain,20610,Joint Injection,115.72,2025-04-23 08:05:00,1,59762-5005-01,Xanax 0.5mg,0.143,0,CLEAN,,2025-04,Wednesday,Low
+CLM_000486,MEM_00265,PROV_0049,Endocrinology,NY,New York City,Z00.00,General Health Exam,20610,Joint Injection,97.55,2025-11-29 12:26:00,1,00093-0058-01,Atorvastatin 20mg,0.248,0,CLEAN,,2025-11,Saturday,Low
+CLM_000487,MEM_00094,PROV_0009,Orthopedics,PA,Philadelphia,J06.9,Upper Respiratory Infection,99214,Office Visit Level 4,117.65,2025-05-20 15:12:00,1,68382-0087-06,Hydrocodone,0.096,0,CLEAN,,2025-05,Tuesday,Low
+CLM_000488,MEM_00026,PROV_0035,Pain Management,TX,Austin,E11.9,Type 2 Diabetes,99215,Office Visit Level 5,183.33,2025-05-18 15:46:00,1,00093-0058-01,Atorvastatin 20mg,0.172,0,CLEAN,,2025-05,Sunday,Low
+CLM_000489,MEM_00078,PROV_0001,Pain Management,TX,Houston,E78.5,Hyperlipidemia,99285,ER Visit Level 5,459.85,2025-06-09 15:23:00,1,,N/A,0.153,0,CLEAN,,2025-06,Monday,Low
+CLM_000490,MEM_00017,PROV_0022,Emergency Medicine,PA,Philadelphia,E10.9,Type 1 Diabetes,99215,Office Visit Level 5,167.25,2025-07-20 02:34:00,1,,N/A,0.094,0,CLEAN,,2025-07,Sunday,Low
+CLM_000491,MEM_00459,PROV_0017,Pain Management,TX,Dallas,F41.9,Anxiety Disorder,99215,Office Visit Level 5,169.38,2026-01-01 15:15:00,1,,N/A,0.85,1,UPCODING,Office visit upcoded from Level 3 to Level 5,2026-01,Thursday,Critical
+CLM_000492,MEM_00049,PROV_0034,Primary Care,GA,Unknown,G89.29,Chronic Pain,99285,ER Visit Level 5,437.25,2025-12-15 13:10:00,1,,N/A,0.062,0,CLEAN,,2025-12,Monday,Low
+CLM_000493,MEM_00382,PROV_0036,Pain Management,IL,Unknown,M79.3,Fibromyalgia,99214,Office Visit Level 4,133.78,2025-11-23 13:56:00,1,,N/A,0.244,0,CLEAN,,2025-11,Sunday,Low
+CLM_000494,MEM_00112,PROV_0008,Physical Therapy,FL,Orlando,M54.5,Low Back Pain,72148,MRI Lumbar Spine,628.41,2025-01-08 12:37:00,1,,N/A,0.189,0,CLEAN,,2025-01,Wednesday,Low
+CLM_000495,MEM_00497,PROV_0003,Physical Therapy,NC,Unknown,Z00.00,General Health Exam,20610,Joint Injection,108.59,2025-11-02 09:15:00,1,,N/A,0.081,0,CLEAN,,2025-11,Sunday,Low
+CLM_000496,MEM_00352,PROV_0040,Primary Care,FL,Orlando,E66.01,Morbid Obesity,72148,MRI Lumbar Spine,588.96,2025-07-02 16:50:00,1,,N/A,0.095,0,CLEAN,,2025-07,Wednesday,Low
+CLM_000497,MEM_00286,PROV_0042,Orthopedics,IL,Unknown,E66.01,Morbid Obesity,97110,Therapeutic Exercise 15min,57.66,2025-12-19 10:16:00,1,00002-8215-01,Humalog (Insulin),0.157,0,CLEAN,,2025-12,Friday,Low
+CLM_000498,MEM_00225,PROV_0036,Pain Management,IL,Unknown,J06.9,Upper Respiratory Infection,97112,Neuromuscular Re-education,80.95,2025-10-18 13:20:00,1,00378-6074-77,Lisinopril 10mg,0.068,0,CLEAN,,2025-10,Saturday,Low
+CLM_000499,MEM_00445,PROV_0039,Cardiology,PA,Philadelphia,M79.3,Fibromyalgia,99215,Office Visit Level 5,215.92,2025-03-21 12:34:00,1,,N/A,0.225,0,CLEAN,,2025-03,Friday,Low
