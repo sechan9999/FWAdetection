@@ -23,6 +23,18 @@ The FWA Detection System automatically analyzes insurance claims to identify **F
 
 ## 🎥 Live Demo
 
+### 🌐 Online Dashboard (Recommended!)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-View_Dashboard-success?style=for-the-badge)](https://sechan9999.github.io/FWAdetection/)
+
+**[🚀 Click Here to View Interactive Dashboard](https://sechan9999.github.io/FWAdetection/)**
+
+- ✅ No installation required
+- ✅ Works on any device (Desktop, Mobile, Tablet)
+- ✅ Real-time interactive charts
+- ✅ Free and fast (GitHub Pages CDN)
+
+---
+
 ### Option 1: Local Dashboard
 ```bash
 # Start local server
