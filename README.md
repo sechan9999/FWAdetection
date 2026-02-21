@@ -331,7 +331,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**Sechan Lee**
+**HK Chun**
 - GitHub: [@sechan9999](https://github.com/sechan9999)
 - Repository: [FWAdetection](https://github.com/sechan9999/FWAdetection)
 
